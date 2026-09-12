@@ -18,7 +18,7 @@ try {
   Invoke-Check 'Backend formatting' $ApiPath 'uv' @('run','--frozen','ruff','format','--check','app','tests')
   Invoke-Check 'Backend lint and static checks' $ApiPath 'uv' @('run','--frozen','ruff','check','app','tests')
   Invoke-Check 'Backend strict typing' $ApiPath 'uv' @('run','--frozen','mypy','app')
-  Invoke-Check 'Backend behavioral tests and coverage' $ApiPath 'uv' @('run','--frozen','pytest','--cov=app','--cov-report=term-missing','--cov-report=xml')
+  Invoke-Check 'Backend behavioral tests and coverage' $ApiPath 'uv' @('run','--frozen','python','-m','pytest','--cov=app','--cov-report=term-missing','--cov-report=xml')
   Invoke-Check 'Generated OpenAPI drift' $ApiPath 'uv' @('run','--frozen','python','-m','app.export_openapi','--check')
   Invoke-Check 'Backend dependency audit' $ApiPath 'uv' @('run','--frozen','pip-audit')
   Invoke-Check 'Frontend formatting' $WebPath 'npm' @('run','format:check')

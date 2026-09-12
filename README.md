@@ -59,7 +59,7 @@ From `services/api`:
 uv run --frozen ruff format --check app tests
 uv run --frozen ruff check app tests
 uv run --frozen mypy app
-uv run --frozen pytest --cov=app --cov-report=term-missing
+uv run --frozen python -m pytest --cov=app --cov-report=term-missing
 uv run --frozen python -m app.export_openapi --check
 uv run --frozen pip-audit
 ```
