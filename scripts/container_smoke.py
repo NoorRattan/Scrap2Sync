@@ -2,7 +2,6 @@
 
 import json
 import time
-import urllib.error
 import urllib.request
 import uuid
 
@@ -17,21 +16,32 @@ def main() -> None:
                 ready = json.load(response)["status"] == "ready"
                 if ready:
                     break
-        except (urllib.error.URLError, TimeoutError):
+        except (OSError, TimeoutError, json.JSONDecodeError):
             time.sleep(1)
     if not ready:
         raise SystemExit("Container did not become ready.")
     payload = {
         "rawNotes": "Completed the fictional lantern page; plan to inspect the compass layout.",
         "styleProfile": {
-            "id": "concise-bullets", "label": "Concise bullets", "layout": "bullets",
-            "verbosity": "brief", "tone": "direct",
-            "headers": {"yesterday": "Yesterday", "today": "Today", "blockers": "Blockers"},
+            "id": "concise-bullets",
+            "label": "Concise bullets",
+            "layout": "bullets",
+            "verbosity": "brief",
+            "tone": "direct",
+            "headers": {
+                "yesterday": "Yesterday",
+                "today": "Today",
+                "blockers": "Blockers",
+            },
             "preferredMaxItemsPerSection": 5,
         },
         "clientRequestId": str(uuid.uuid4()),
     }
-    request = urllib.request.Request(BASE + "/api/v1/generate", data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
+    request = urllib.request.Request(
+        BASE + "/api/v1/generate",
+        data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json"},
+    )
     with urllib.request.urlopen(request, timeout=12) as response:
         result = json.load(response)
         if response.headers.get("Cache-Control") != "no-store":
