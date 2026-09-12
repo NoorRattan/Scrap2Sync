@@ -1,0 +1,33 @@
+{
+  "providerEnabled": false,
+  "formatterRevision": "rules-2026-09-06.1+sha256:ebb31d1e7487c868ca401f0dacf6f8fb46c0228263b3c866babd40d644bebb07",
+  "formatterFamilyRevision": "rules-2026-09-06.1",
+  "backendSourceSha256": "ebb31d1e7487c868ca401f0dacf6f8fb46c0228263b3c866babd40d644bebb07",
+  "backendSourceFiles": {
+    "app/__init__.py": "fef1a76520fd002426f742e962669fd07f8530bc93a41e667cfec701d9ef7287",
+    "app/core/__init__.py": "0a27e7db83313d61a9ffc7a9bba51b8bdf60f032233c25eb3da15de48c5f17cd",
+    "app/core/config.py": "ccea3a432f638ae3b76b5d7efbc03ea35ab1039b12a8f50bbcf0ebeaf49cb2c7",
+    "app/core/errors.py": "3e6c75f7502f0eda819cd5b0de97efd9ddc9b57a3dd3635e797ba3894a383511",
+    "app/export_openapi.py": "1bcbd92d30767f96a5143d28a4ef9fb51e6bb4d91be85b689979232b53b11b4e",
+    "app/formatters/__init__.py": "1ce5a9179430f625f6b0bf1acad56f043f4b56299b042a5011b3f8c49bdd4497",
+    "app/formatters/fragmenter.py": "3a56571257bec4062ee489f49437a9bb488288269e4a02b5b7afd3238dc30bc0",
+    "app/formatters/rules_fallback_v1.py": "1c554cc61bdf3a2ae0934bef3e481e5b208ae46b1fd1a0a44528eadac9c04a0e",
+    "app/formatters/validator.py": "c06678863394a551b80e6ba7f862be801bc0f9e4ce7019291097a925c745684e",
+    "app/main.py": "b8d2fbc831dc293d0eafd8fd3c74d654a2b16d341147c4d0cdb50360d08bf957",
+    "app/models/__init__.py": "b5a8e1faecf22c0b2fc44e77d8dad2fa7e277015ad61502c0eebaed50db81334",
+    "app/models/base.py": "e409d4406de3b3387a21167e6997189360855aab70a765ac306cb8b63ed6144b",
+    "app/models/generation.py": "33af2fd1cd7d99341f733d98f33866a19709b762c3b04de2e033125d86d1b3c8",
+    "app/models/source_fragment.py": "b4ff98a0d726c1f4c58e479699a42285231a37eb17a34d4c1d1de96ddb3c4104",
+    "app/models/style_profile.py": "b045a2eaff6050e7ff77301acffe51d4fa0dd678164f7f372e6a082a1c4367e9",
+    "app/routers/__init__.py": "bf93295a2561be11b268de55107f1facf918c1fc90da44ed26f9dce72be81e69",
+    "app/routers/generate.py": "978f77ea3bdc43721799dc61037b175c00c2a64ab607afa7d6420e22db868fba",
+    "app/routers/health.py": "6958a2324f52a68ddc07db6060117c26e3638e5574a926aeb6c269589f54b88a"
+  },
+  "executionMethod": "Direct prepared-source fallback and common validator for valid cases; actual in-process FastAPI validation requests for invalid cases.",
+  "providerCalls": 0,
+  "network": "No external requests; TestClient is in-process.",
+  "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+  "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+  "caseResultsSha256": "e2ee16646b2e0c5b0fe3fa868c19c9659084e069dcaad39316161172ad49e648",
+  "reviewPacketSha256": "8ebe7818eda06807c9efc33fb55a2488313f11efa5a057991ab4456652d65cf8"
+}

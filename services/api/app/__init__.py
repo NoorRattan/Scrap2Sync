@@ -1,0 +1,1 @@
+"""Scrap2Sync API."""

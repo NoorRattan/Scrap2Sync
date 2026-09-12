@@ -1,0 +1,641 @@
+{
+  "specificationRevision": "REV-002",
+  "timestamp": "2026-09-12T17:10:29.406985+00:00",
+  "repository": {
+    "commit": "no commits",
+    "state": [
+      "?? .env.example",
+      "?? .gitattributes",
+      "?? .github/",
+      "?? .gitignore",
+      "?? .gitleaks.toml",
+      "?? .nvmrc",
+      "?? .python-version",
+      "?? README.md",
+      "?? apps/",
+      "?? docs/",
+      "?? evaluation/",
+      "?? scripts/",
+      "?? services/"
+    ]
+  },
+  "dataset": {
+    "path": "evaluation/dataset/benchmark.jsonl",
+    "sha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+    "frozenAt": "2026-09-05T16:23:29.0106392Z",
+    "caseCount": 72,
+    "validCaseCount": 69,
+    "invalidCaseCount": 3,
+    "coverageTagCounts": {
+      "abbreviation": 3,
+      "active-blocker": 12,
+      "boundary-length": 9,
+      "casing": 15,
+      "completed-plus-planned": 9,
+      "completed-work": 12,
+      "continuing-work": 3,
+      "date": 3,
+      "emoji": 3,
+      "empty-invalid": 3,
+      "explicit-headings": 3,
+      "indivisible-protected-token": 6,
+      "informal-language": 3,
+      "instruction-like-text": 3,
+      "json": 3,
+      "link": 3,
+      "markup-looking-code": 6,
+      "multiple-facts-per-fragment": 15,
+      "name": 3,
+      "negated-blocker": 3,
+      "no-headings": 24,
+      "non-english": 3,
+      "percentage": 3,
+      "planned-work": 6,
+      "profile-overflow": 3,
+      "provider-circuit-open": 12,
+      "provider-malformed": 12,
+      "provider-missing": 12,
+      "provider-novel-fact": 12,
+      "provider-protected-omission": 9,
+      "provider-timeout": 12,
+      "quantity": 6,
+      "quoted-error": 6,
+      "rambling": 6,
+      "resolved-blocker": 3,
+      "terse": 9,
+      "ticket-id": 9,
+      "uncertain": 12,
+      "unknown-cause": 9,
+      "version": 3
+    }
+  },
+  "rubric": {
+    "version": "1.0.0",
+    "sha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873"
+  },
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "providerEnabled": false,
+    "formatterRevision": "rules-2026-09-12.2+sha256:616cb769f5002f95c31988a65ee70eedd10ffd7f03d52e5a0e37dd156602efdb",
+    "formatterFamilyRevision": "rules-2026-09-12.2",
+    "backendSourceSha256": "616cb769f5002f95c31988a65ee70eedd10ffd7f03d52e5a0e37dd156602efdb",
+    "backendSourceFiles": {
+      "app/__init__.py": "fef1a76520fd002426f742e962669fd07f8530bc93a41e667cfec701d9ef7287",
+      "app/core/__init__.py": "0a27e7db83313d61a9ffc7a9bba51b8bdf60f032233c25eb3da15de48c5f17cd",
+      "app/core/circuit_breaker.py": "93053ef64d7f92e3d89a8285dca9ed63b53f91ff3b126befb7f170acaa976976",
+      "app/core/config.py": "ccea3a432f638ae3b76b5d7efbc03ea35ab1039b12a8f50bbcf0ebeaf49cb2c7",
+      "app/core/errors.py": "3e6c75f7502f0eda819cd5b0de97efd9ddc9b57a3dd3635e797ba3894a383511",
+      "app/core/logging.py": "c257c3f41304b0441551198f6265ed00849d048578c0cdf54b7efabaf93c91e1",
+      "app/core/rate_limit.py": "e459ed836c6eb117359338727bb1646f3fc27f37cbd0ff4077bed67ddcded241",
+      "app/core/security.py": "cb0342ee69cc48e01ee554e24205ebadf782578653ae1a1ad7be625129331104",
+      "app/core/service.py": "c3e0b0a8e3e67eecbbc9d3785690b04653e0c71e2ede90ad5c5861499250a354",
+      "app/export_openapi.py": "1bcbd92d30767f96a5143d28a4ef9fb51e6bb4d91be85b689979232b53b11b4e",
+      "app/formatters/__init__.py": "1ce5a9179430f625f6b0bf1acad56f043f4b56299b042a5011b3f8c49bdd4497",
+      "app/formatters/fragmenter.py": "903148efce4c98ec4f630b73e626d71710405f6e15fe0bb61352a6510bf76cbf",
+      "app/formatters/rules_fallback_v1.py": "8502af896973ec8639c825b0af0710de6dd58401679f88a894be406370b3fddf",
+      "app/formatters/validator.py": "f4213e070c6ad52939d30d08b53aa0d689ae00090afe1a7181c1489b742084dd",
+      "app/main.py": "1b34a2f23eca69b154cd11193ea9ba491485f793f2668c684722583cba7c7e17",
+      "app/models/__init__.py": "b5a8e1faecf22c0b2fc44e77d8dad2fa7e277015ad61502c0eebaed50db81334",
+      "app/models/base.py": "e409d4406de3b3387a21167e6997189360855aab70a765ac306cb8b63ed6144b",
+      "app/models/generation.py": "33af2fd1cd7d99341f733d98f33866a19709b762c3b04de2e033125d86d1b3c8",
+      "app/models/source_fragment.py": "b4ff98a0d726c1f4c58e479699a42285231a37eb17a34d4c1d1de96ddb3c4104",
+      "app/models/style_profile.py": "b045a2eaff6050e7ff77301acffe51d4fa0dd678164f7f372e6a082a1c4367e9",
+      "app/providers/__init__.py": "0505377d3b76d1de4642868e39c7863e9d6cb0a853e010af6014451eeba2eb2a",
+      "app/providers/formatter_provider.py": "2d4ebb26469e91597cdffcc7e15bcf022ffdb7d58cb26ccda17de890a1be884f",
+      "app/routers/__init__.py": "bf93295a2561be11b268de55107f1facf918c1fc90da44ed26f9dce72be81e69",
+      "app/routers/generate.py": "9ed6adebd188ddfb1952e6100df0e533a5f5d2512bffa37093789eca6240783d",
+      "app/routers/health.py": "403e179627d03ae10440da716568b736a115ce46f5db719ad28e843ba132832d"
+    },
+    "executionMethod": "Complete no-provider GenerationService response plus independent common-validator recheck for valid cases; actual in-process FastAPI validation requests for invalid cases.",
+    "providerCalls": 0,
+    "network": "No external requests; TestClient is in-process.",
+    "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+    "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+    "caseResultsSha256": "bd75f818c26bf44d0144791c93ff5951afc5a7259e721dc42b7771a66977bdee",
+    "reviewPacketSha256": "7554923059bc706267d603c7fd8513a8b2d9396b09b811c766ad8bfe48b68b76"
+  },
+  "engines": {
+    "rules-fallback-v1": {
+      "execution": "run",
+      "formatterRevision": "rules-2026-09-12.2+sha256:616cb769f5002f95c31988a65ee70eedd10ffd7f03d52e5a0e37dd156602efdb",
+      "metrics": {
+        "strictResponseSchema": {
+          "value": {
+            "passed": 69,
+            "total": 69,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "commonProtectedFactValidation": {
+          "value": {
+            "passed": 69,
+            "total": 69,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "meaningfulFragmentCoverage": {
+          "value": {
+            "passed": 69,
+            "total": 69,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "fallbackNoOmittedFragments": {
+          "value": {
+            "passed": 69,
+            "total": 69,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "noFalseActiveBlocker": {
+          "value": {
+            "passed": 6,
+            "total": 6,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "exactAnnotatedProtectedTokens": {
+          "value": {
+            "passed": 69,
+            "total": 69,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "protectedTokenPreservation": {
+          "value": {
+            "preserved": 87,
+            "required": 87,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "semanticFactPrecision": {
+          "value": {
+            "numerator": 132,
+            "denominator": 132,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "semanticFactRecall": {
+          "value": {
+            "numerator": 126,
+            "denominator": 126,
+            "rate": 1.0
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "criticalOmissions": {
+          "value": 0,
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "sectionPlacementMacroF1": {
+          "value": {
+            "macroF1": 1.0,
+            "sections": {
+              "yesterday": {
+                "tp": 36,
+                "fp": 0,
+                "fn": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "today": {
+                "tp": 63,
+                "fp": 0,
+                "fn": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              },
+              "blockers": {
+                "tp": 12,
+                "fp": 0,
+                "fn": 0,
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1": 1.0
+              }
+            }
+          },
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "semanticNovelOrChangedProtectedFacts": {
+          "value": 0,
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "semanticFalseActiveBlockers": {
+          "value": 0,
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "warningCorrectness": {
+          "value": 69,
+          "verdict": "pass",
+          "failureCaseIds": [],
+          "limitation": null
+        },
+        "pairwiseUsefulness": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "Live primary provider not run; stub output cannot establish usefulness preference."
+        }
+      },
+      "slices": {
+        "abbreviation": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "active-blocker": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "boundary-length": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "casing": {
+          "cases": 15,
+          "automatedPassed": 15,
+          "failureCaseIds": []
+        },
+        "completed-plus-planned": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "completed-work": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "continuing-work": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "date": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "emoji": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "empty-invalid": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "explicit-headings": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "indivisible-protected-token": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "informal-language": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "instruction-like-text": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "json": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "link": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "markup-looking-code": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "multiple-facts-per-fragment": {
+          "cases": 15,
+          "automatedPassed": 15,
+          "failureCaseIds": []
+        },
+        "name": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "negated-blocker": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "no-headings": {
+          "cases": 24,
+          "automatedPassed": 24,
+          "failureCaseIds": []
+        },
+        "non-english": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "percentage": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "planned-work": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "profile-overflow": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "provider-circuit-open": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "provider-malformed": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "provider-missing": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "provider-novel-fact": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "provider-protected-omission": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "provider-timeout": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "quantity": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "quoted-error": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "rambling": {
+          "cases": 6,
+          "automatedPassed": 6,
+          "failureCaseIds": []
+        },
+        "resolved-blocker": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        },
+        "terse": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "ticket-id": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "uncertain": {
+          "cases": 12,
+          "automatedPassed": 12,
+          "failureCaseIds": []
+        },
+        "unknown-cause": {
+          "cases": 9,
+          "automatedPassed": 9,
+          "failureCaseIds": []
+        },
+        "version": {
+          "cases": 3,
+          "automatedPassed": 3,
+          "failureCaseIds": []
+        }
+      },
+      "failureCaseIds": [],
+      "automatedFailureCaseIds": [],
+      "caseResults": "evaluation/reports/case-results.jsonl",
+      "conclusion": "demonstrated"
+    },
+    "structured-llm-v1": {
+      "execution": "not_run",
+      "model": "not_run",
+      "settings": "not_run",
+      "metrics": {
+        "strictResponseSchema": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "commonProtectedFactValidation": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "meaningfulFragmentCoverage": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "fallbackNoOmittedFragments": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "noFalseActiveBlocker": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "exactAnnotatedProtectedTokens": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "protectedTokenPreservation": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "semanticFactPrecision": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "semanticFactRecall": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "criticalOmissions": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "sectionPlacementMacroF1": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "semanticNovelOrChangedProtectedFacts": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "semanticFalseActiveBlockers": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "warningCorrectness": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        },
+        "pairwiseUsefulness": {
+          "value": null,
+          "verdict": "not_run",
+          "failureCaseIds": [],
+          "limitation": "No authorized live provider run."
+        }
+      },
+      "failureCaseIds": [],
+      "conclusion": "not demonstrated",
+      "limitation": "Adapter stubs verify integration correctness only; no live primary quality, latency, retention or cost claim."
+    }
+  },
+  "invalidInput": {
+    "count": 3,
+    "passed": 3,
+    "failureCaseIds": []
+  },
+  "review": {
+    "reviewerCount": 1,
+    "provenance": [
+      {
+        "type": "model",
+        "name": "Codex semantic release reviewer",
+        "modelOrRole": "OpenAI Codex (GPT-5)",
+        "provider": "OpenAI",
+        "reviewedAt": "2026-09-12T17:10:16.858241+00:00",
+        "independent": false
+      }
+    ],
+    "evidencePaths": [
+      "evaluation/reports/primary-review.json"
+    ],
+    "agreement": {
+      "status": "not_run",
+      "reason": "Only one or no semantic reviewer supplied; no agreement claim."
+    },
+    "limitations": [
+      "RISK-005: model-authored fictional benchmark; shared model/team context.",
+      "Automated span/placement matches are proxies and remain separate from semantic reviewer scores.",
+      "Single-output review is not blinded pairwise usefulness evidence."
+    ]
+  },
+  "editingEffort": {
+    "status": "reviewed",
+    "counts": {
+      "edits": 7,
+      "deletes": 0,
+      "additions": 1,
+      "moves": 3
+    },
+    "reviewedCases": 69
+  },
+  "latency": {
+    "status": "not_run",
+    "reason": "Case timings measure direct service calls only, not client-visible output paint; browser profile is separate."
+  },
+  "cost": "not_measured",
+  "providerIntegrationEvidence": {
+    "status": "not_run",
+    "reason": "Separate stubbed adapter tests supply this evidence."
+  },
+  "previousRunEvidence": [
+    "evaluation/reports/runs/8d0a982185e74dcfab76/execution-metadata.json",
+    "evaluation/reports/runs/e2ee16646b2e0c5b0fe3/execution-metadata.json"
+  ],
+  "conclusionScope": "Local frozen fallback benchmark only; excludes live primary quality, pairwise improvement and deployed latency.",
+  "conclusion": "demonstrated"
+}

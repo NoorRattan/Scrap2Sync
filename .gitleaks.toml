@@ -1,0 +1,22 @@
+title = "Scrap2Sync source scan"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated dependencies, downloaded build tools, and caches are not release source."
+paths = [
+  '''(^|/)node_modules/''',
+  '''(^|/)\.next/''',
+  '''(^|/)\.next-no-orb/''',
+  '''(^|/)\.venv/''',
+  '''(^|/)\.tools/''',
+  '''(^|/)\.cache/''',
+  '''(^|/)playwright-report/''',
+  '''(^|/)test-results/''',
+]
+
+[[allowlists]]
+description = "Generated evaluation manifests record SHA-256 source fingerprints, not credentials."
+paths = [
+  '''^evaluation/reports/(?:runs/[^/]+/)?(?:execution-metadata|release-report)\.json$''',
+]

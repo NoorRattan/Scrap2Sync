@@ -1,0 +1,435 @@
+{
+  "measuredAt": "2026-09-12T17:22:04.954Z",
+  "environment": {
+    "os": "Windows_NT 10.0.26200",
+    "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M           ",
+    "logicalProcessors": 24,
+    "ramBytes": 33412722688,
+    "node": "v24.20.0",
+    "browser": "153.0.8010.12",
+    "mode": "production",
+    "api": "disabled provider, one instance, loopback, rate limit raised to 10000/minute for profiling",
+    "warmRuns": 30,
+    "coldRuns": 10
+  },
+  "sampleCount": 240,
+  "profiles": [
+    {
+      "orb": true,
+      "mode": "warm-server",
+      "inputCodePoints": 250,
+      "count": 30,
+      "latencyMs": {
+        "p50": 126.09999999403954,
+        "p95": 145.3999999910593,
+        "maximum": 147.59999999403954
+      },
+      "firstPaintMs": {
+        "p50": 164,
+        "p95": 180,
+        "maximum": 196
+      },
+      "lcpMs": {
+        "p50": 164,
+        "p95": 180,
+        "maximum": 196
+      },
+      "mainThreadTaskMs": {
+        "p50": 83.28999999999998,
+        "p95": 97.10600000000002,
+        "maximum": 98.62199999999999
+      },
+      "rendererJsHeapBytes": {
+        "p50": 7685748,
+        "p95": 7719756,
+        "maximum": 8050168
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": true,
+      "mode": "warm-server",
+      "inputCodePoints": 1500,
+      "count": 30,
+      "latencyMs": {
+        "p50": 127.09999999403954,
+        "p95": 146.29999999701977,
+        "maximum": 159.5
+      },
+      "firstPaintMs": {
+        "p50": 164,
+        "p95": 176,
+        "maximum": 180
+      },
+      "lcpMs": {
+        "p50": 972,
+        "p95": 996,
+        "maximum": 996
+      },
+      "mainThreadTaskMs": {
+        "p50": 88.34300000000006,
+        "p95": 95.01499999999996,
+        "maximum": 95.40700000000002
+      },
+      "rendererJsHeapBytes": {
+        "p50": 8482920,
+        "p95": 8592988,
+        "maximum": 8594636
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": true,
+      "mode": "warm-server",
+      "inputCodePoints": 10000,
+      "count": 30,
+      "latencyMs": {
+        "p50": 191.5,
+        "p95": 218.5,
+        "maximum": 223.5
+      },
+      "firstPaintMs": {
+        "p50": 164,
+        "p95": 176,
+        "maximum": 176
+      },
+      "lcpMs": {
+        "p50": 956,
+        "p95": 988,
+        "maximum": 996
+      },
+      "mainThreadTaskMs": {
+        "p50": 103.387,
+        "p95": 112.07599999999995,
+        "maximum": 112.56300000000007
+      },
+      "rendererJsHeapBytes": {
+        "p50": 9880224,
+        "p95": 9891796,
+        "maximum": 9892616
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": true,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 250,
+      "count": 10,
+      "latencyMs": {
+        "p50": 128,
+        "p95": 138.90000000596046,
+        "maximum": 138.90000000596046
+      },
+      "firstPaintMs": {
+        "p50": 180,
+        "p95": 188,
+        "maximum": 188
+      },
+      "lcpMs": {
+        "p50": 180,
+        "p95": 188,
+        "maximum": 188
+      },
+      "mainThreadTaskMs": {
+        "p50": 87.50400000000002,
+        "p95": 92.92299999999997,
+        "maximum": 92.92299999999997
+      },
+      "rendererJsHeapBytes": {
+        "p50": 7684124,
+        "p95": 8051352,
+        "maximum": 8051352
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": true,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 1500,
+      "count": 10,
+      "latencyMs": {
+        "p50": 127.79999999701977,
+        "p95": 145.29999999701977,
+        "maximum": 145.29999999701977
+      },
+      "firstPaintMs": {
+        "p50": 180,
+        "p95": 200,
+        "maximum": 200
+      },
+      "lcpMs": {
+        "p50": 992,
+        "p95": 1028,
+        "maximum": 1028
+      },
+      "mainThreadTaskMs": {
+        "p50": 90.144,
+        "p95": 96.31899999999993,
+        "maximum": 96.31899999999993
+      },
+      "rendererJsHeapBytes": {
+        "p50": 8525044,
+        "p95": 8620156,
+        "maximum": 8620156
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": true,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 10000,
+      "count": 10,
+      "latencyMs": {
+        "p50": 161.69999998807907,
+        "p95": 177.80000001192093,
+        "maximum": 177.80000001192093
+      },
+      "firstPaintMs": {
+        "p50": 180,
+        "p95": 196,
+        "maximum": 196
+      },
+      "lcpMs": {
+        "p50": 988,
+        "p95": 1020,
+        "maximum": 1020
+      },
+      "mainThreadTaskMs": {
+        "p50": 101.55500000000006,
+        "p95": 125.71,
+        "maximum": 125.71
+      },
+      "rendererJsHeapBytes": {
+        "p50": 9866796,
+        "p95": 9870912,
+        "maximum": 9870912
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "warm-server",
+      "inputCodePoints": 250,
+      "count": 30,
+      "latencyMs": {
+        "p50": 106.5,
+        "p95": 125,
+        "maximum": 130.20000000298023
+      },
+      "firstPaintMs": {
+        "p50": 168,
+        "p95": 184,
+        "maximum": 184
+      },
+      "lcpMs": {
+        "p50": 168,
+        "p95": 184,
+        "maximum": 184
+      },
+      "mainThreadTaskMs": {
+        "p50": 56.80499999999999,
+        "p95": 65.02600000000002,
+        "maximum": 77.492
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5175380,
+        "p95": 5185652,
+        "maximum": 5196408
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "warm-server",
+      "inputCodePoints": 1500,
+      "count": 30,
+      "latencyMs": {
+        "p50": 129,
+        "p95": 151.09999999403954,
+        "maximum": 152.5
+      },
+      "firstPaintMs": {
+        "p50": 164,
+        "p95": 180,
+        "maximum": 180
+      },
+      "lcpMs": {
+        "p50": 880,
+        "p95": 896,
+        "maximum": 932
+      },
+      "mainThreadTaskMs": {
+        "p50": 57.678000000000004,
+        "p95": 66.71100000000003,
+        "maximum": 78.53899999999997
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5679320,
+        "p95": 5695052,
+        "maximum": 5696352
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "warm-server",
+      "inputCodePoints": 10000,
+      "count": 30,
+      "latencyMs": {
+        "p50": 191.5,
+        "p95": 212,
+        "maximum": 212.09999999403954
+      },
+      "firstPaintMs": {
+        "p50": 164,
+        "p95": 176,
+        "maximum": 192
+      },
+      "lcpMs": {
+        "p50": 880,
+        "p95": 892,
+        "maximum": 904
+      },
+      "mainThreadTaskMs": {
+        "p50": 69.307,
+        "p95": 75.658,
+        "maximum": 76.017
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5634264,
+        "p95": 5635112,
+        "maximum": 5635160
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 250,
+      "count": 10,
+      "latencyMs": {
+        "p50": 114.1000000089407,
+        "p95": 140.3999999910593,
+        "maximum": 140.3999999910593
+      },
+      "firstPaintMs": {
+        "p50": 184,
+        "p95": 188,
+        "maximum": 188
+      },
+      "lcpMs": {
+        "p50": 184,
+        "p95": 188,
+        "maximum": 188
+      },
+      "mainThreadTaskMs": {
+        "p50": 59.51200000000001,
+        "p95": 64.39800000000001,
+        "maximum": 64.39800000000001
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5176480,
+        "p95": 5225004,
+        "maximum": 5225004
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 1500,
+      "count": 10,
+      "latencyMs": {
+        "p50": 138.20000000298023,
+        "p95": 147.29999999701977,
+        "maximum": 147.29999999701977
+      },
+      "firstPaintMs": {
+        "p50": 180,
+        "p95": 184,
+        "maximum": 184
+      },
+      "lcpMs": {
+        "p50": 912,
+        "p95": 948,
+        "maximum": 948
+      },
+      "mainThreadTaskMs": {
+        "p50": 58.663999999999994,
+        "p95": 63.433000000000014,
+        "maximum": 63.433000000000014
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5671320,
+        "p95": 5698760,
+        "maximum": 5698760
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    },
+    {
+      "orb": false,
+      "mode": "cold-api-and-web-process",
+      "inputCodePoints": 10000,
+      "count": 10,
+      "latencyMs": {
+        "p50": 185.09999999403954,
+        "p95": 217,
+        "maximum": 217
+      },
+      "firstPaintMs": {
+        "p50": 180,
+        "p95": 184,
+        "maximum": 184
+      },
+      "lcpMs": {
+        "p50": 908,
+        "p95": 932,
+        "maximum": 932
+      },
+      "mainThreadTaskMs": {
+        "p50": 68.99499999999998,
+        "p95": 82.73799999999997,
+        "maximum": 82.73799999999997
+      },
+      "rendererJsHeapBytes": {
+        "p50": 5594188,
+        "p95": 5634348,
+        "maximum": 5634348
+      },
+      "failureRate": 0,
+      "fallbackRate": 1
+    }
+  ],
+  "bundle": {
+    "enabled": {
+      "chunks": 15,
+      "rawBytes": 1551591,
+      "gzipBytes": 442416
+    },
+    "disabled": {
+      "chunks": 15,
+      "rawBytes": 1551151,
+      "gzipBytes": 442258
+    },
+    "differenceGzipBytes": 158
+  },
+  "limitations": [
+    "Local loopback fallback profile; no live provider, network or deployment claim.",
+    "Cold means both application processes restart; OS filesystem cache and browser executable remain warm. Readiness probes precede first user interaction.",
+    "Renderer memory is Chromium-reported JavaScript heap, not total process or GPU memory.",
+    "Input classes are fictional controlled preservation workloads, not commercial usage distribution.",
+    "Timing begins before the automated Generate activation and ends after two rendering frames; includes automation dispatch overhead."
+  ],
+  "publicThreeSecondClaimAuthorized": false
+}

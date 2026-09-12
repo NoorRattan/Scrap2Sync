@@ -1,0 +1,16 @@
+{
+  "datasetVersion": "1.0.0",
+  "frozenAt": "2026-09-05T16:23:29.0106392Z",
+  "datasetPath": "dataset/benchmark.jsonl",
+  "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+  "rubricVersion": "1.0.0",
+  "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+  "caseCount": 72,
+  "validCaseCount": 69,
+  "invalidCaseCount": 3,
+  "author": "OpenAI GPT-6 / Codex",
+  "authorType": "model-authored",
+  "contentRights": "fictional",
+  "formatterOutputObservedDuringAuthorship": false,
+  "independent": false
+}

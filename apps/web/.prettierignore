@@ -1,0 +1,6 @@
+.next/
+.next-no-orb/
+coverage/
+node_modules/
+playwright-report/
+test-results/

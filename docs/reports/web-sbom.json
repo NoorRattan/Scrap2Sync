@@ -1,0 +1,2095 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:33d7458a-e99d-449c-a055-dfa0ba0e4763",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-05T16:31:30.808Z",
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "tools": [
+      {
+        "vendor": "npm",
+        "name": "cli",
+        "version": "11.19.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "scrap2sync-web@0.1.0-rc.1",
+      "type": "library",
+      "name": "web",
+      "version": "0.1.0-rc.1",
+      "scope": "required",
+      "purl": "pkg:npm/scrap2sync-web@0.1.0-rc.1",
+      "properties": [
+        {
+          "name": "cdx:npm:package:private",
+          "value": "true"
+        }
+      ],
+      "externalReferences": []
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "@img/colour@1.1.0",
+      "type": "library",
+      "name": "@img/colour",
+      "version": "1.1.0",
+      "scope": "optional",
+      "description": "The ESM-only 'color' package made compatible for use with CommonJS runtimes",
+      "purl": "pkg:npm/%40img/colour@1.1.0",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/colour.git"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "4ddefaabb8f9ee8fed2d57604bbe3a7180117d2cb193c8847d1c5ec0bf61e0e3336216d6e1301ca69974993e1ecaa5dd761e8bfe3c2833be66a3b8b16bfa4279"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@img/sharp-win32-x64@0.35.4",
+      "type": "library",
+      "name": "@img/sharp-win32-x64",
+      "version": "0.35.4",
+      "scope": "optional",
+      "author": "Lovell Fuller <npm@lovell.info>",
+      "description": "Prebuilt sharp for use with Windows x64",
+      "purl": "pkg:npm/%40img/sharp-win32-x64@0.35.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@img/sharp-win32-x64/-/sharp-win32-x64-0.35.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/sharp.git"
+        },
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "5ed9a762105cace46c2785c99e0cb3aff1163f485164b019445680a5d2aebe2caa17bf3eca5c61db2d3a666b542c030e9ce6c9dee72937401cc125a7328c1346"
+        }
+      ],
+      "licenses": [
+        {
+          "expression": "Apache-2.0 AND LGPL-3.0-or-later"
+        }
+      ]
+    },
+    {
+      "bom-ref": "@next/env@16.3.4",
+      "type": "library",
+      "name": "@next/env",
+      "version": "16.3.4",
+      "scope": "required",
+      "author": "Next.js Team <support@vercel.com>",
+      "description": "Next.js dotenv file loading",
+      "purl": "pkg:npm/%40next/env@16.3.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@next/env/-/env-16.3.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/vercel/next.js"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "7235999d451aea366ada415a35efd9c89759a27399fd0a0dd1991ada7cff14b3ab7f1d78a50b8cf5ce5169256458caa076de24b203c03163f21d2b3f0b2578f1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@next/swc-win32-x64-msvc@16.3.4",
+      "type": "library",
+      "name": "@next/swc-win32-x64-msvc",
+      "version": "16.3.4",
+      "scope": "optional",
+      "purl": "pkg:npm/%40next/swc-win32-x64-msvc@16.3.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-16.3.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/vercel/next.js"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "bef073c2ed696100a9f7699a642142230fd780e4cc479b6eafd1a36a4c08a36726c114cc29a8d16590d2f7e7b82ac51958abb5134d3b5947801574518d97aecf"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/primitive@1.1.7",
+      "type": "library",
+      "name": "@radix-ui/primitive",
+      "version": "1.1.7",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/primitive@1.1.7",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/primitive/-/primitive-1.1.7.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "aea5a79bbea7613f07a0d36a123a6027b3f0fc3ac18f98814eb9843e8e874d7e7e549c8134ea9376fe20f3d1badc7b91e60d0068436801c1fb22ce5f176919f1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-compose-refs@1.1.5",
+      "type": "library",
+      "name": "@radix-ui/react-compose-refs",
+      "version": "1.1.5",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-compose-refs@1.1.5",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fb8f0f6c001bab77627632716be39a598d99c2000ab0d8911b27872accdb959310fa472977da40693d7570c9061227b4bec3a2dd075e4c4e9de457b71a7eb590"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-context@1.2.2",
+      "type": "library",
+      "name": "@radix-ui/react-context",
+      "version": "1.2.2",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-context@1.2.2",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.2.2.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "4470941b02870ebd210c68385fb99ae091b8ffed76ab1c3cae487940a74395d942bed8daea7531d447fff0756b2737bcd6512c80b425aa3ce318d1da9ed82740"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-dialog@1.1.23",
+      "type": "library",
+      "name": "@radix-ui/react-dialog",
+      "version": "1.1.23",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-dialog@1.1.23",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-dialog/-/react-dialog-1.1.23.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2acc3859e44e90ee2b0bd93fa278a55ff028d82af592ed6e9cc347f9748270fe2349762eec70ec83d9f8a2332355bdb65e9623010f6a7eb16555baeed6f5c350"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-dismissable-layer@1.1.19",
+      "type": "library",
+      "name": "@radix-ui/react-dismissable-layer",
+      "version": "1.1.19",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-dismissable-layer@1.1.19",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.19.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "f20e297ce2fd1e828a2d61a2ca94fe769855aa315f99c5cee4606786c1bacc8fa5c40c7ff1f790a6bfb52d237c45ede1899f9790b352e0ef73b4ad75fcbcd0eb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-focus-guards@1.1.6",
+      "type": "library",
+      "name": "@radix-ui/react-focus-guards",
+      "version": "1.1.6",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-focus-guards@1.1.6",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "44d3898df64c4f204ceb162657721519790f8c885c040bafe3c3ce7af017c2b189864599f69d6b168212d49168a0fb93d7ddc066646c08f869a15271c7a38fa1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-focus-scope@1.1.16",
+      "type": "library",
+      "name": "@radix-ui/react-focus-scope",
+      "version": "1.1.16",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-focus-scope@1.1.16",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.1.16.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "c26459d9658bbe6b7a287cb6acd3ce74f523c2ae71387634dbe9beb9dc094e7d1a348a31feb92c900bc94f24cb1a13cae8a82b523949509a609b1ffec0588521"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-id@1.1.4",
+      "type": "library",
+      "name": "@radix-ui/react-id",
+      "version": "1.1.4",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-id@1.1.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.1.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "4cc429da5940f91627ec97239eb327cfbc0de29715b6d3d99d1668e763cb42ca0b54accd955c1478799f78f81381196e5c5be50f7183e60e4c3955532423b4a8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-portal@1.1.17",
+      "type": "library",
+      "name": "@radix-ui/react-portal",
+      "version": "1.1.17",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-portal@1.1.17",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.1.17.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "bca40b716ca9527c1956f7d5ed49066a11f683ac927bc33c47ecd80703ebbf96f267d4005ba71056f34aa3b1a0983fa9f1a61be83f4906ebf2f3f5a13a7a36c1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-presence@1.1.10",
+      "type": "library",
+      "name": "@radix-ui/react-presence",
+      "version": "1.1.10",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-presence@1.1.10",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-1.1.10.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "df0cb3090ebeb9b440f83e2ebfd9bde4960b5f198e1e9d39aa3ae48de03bb8a1c7b63a4f82043373a0c06f451197b8faee84742b67e83b88a9dbb4e25f4dfb07"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-primitive@2.1.10",
+      "type": "library",
+      "name": "@radix-ui/react-primitive",
+      "version": "2.1.10",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-primitive@2.1.10",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.10.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "32e70e9f387a851e6689de95a646e095100c60c8ca2ea4671816e35e4ce32b9d9fb900ddd6a6e4c7bf1ae4fe349a472755725d115c66dba13d38f02252aee706"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-slot@1.3.3",
+      "type": "library",
+      "name": "@radix-ui/react-slot",
+      "version": "1.3.3",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-slot@1.3.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.3.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "ab1ee8aa761bc672bd91823d9b7d7baa6166120a3acb0a96bdb4e881d8fb70bf69dffcb1e0ce3ca7b467c39cf71fcf7470bfe8c3f11e589b2e4f291e6555cfe5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-use-callback-ref@1.1.4",
+      "type": "library",
+      "name": "@radix-ui/react-use-callback-ref",
+      "version": "1.1.4",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-use-callback-ref@1.1.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "47a3946367b67c0e989fab3e552c7928157a371f0b40486ef9ccfb2c27a3d7cad0d472f283d3d20bd8cffd9371d28e850082bd734175907ca5cd2c4ab1d964ad"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-use-controllable-state@1.2.6",
+      "type": "library",
+      "name": "@radix-ui/react-use-controllable-state",
+      "version": "1.2.6",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-use-controllable-state@1.2.6",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.2.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "b84409193f7b640fd380ffc7c9dc38ee51eefbfbd08facffd2303e59e4db2b5a3d471e391889a3a43d2d7375b969ddc3e974d247a7b5c843b416f1aae9641f55"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-use-effect-event@0.0.5",
+      "type": "library",
+      "name": "@radix-ui/react-use-effect-event",
+      "version": "0.0.5",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-use-effect-event@0.0.5",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-use-effect-event/-/react-use-effect-event-0.0.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "edcb2114bf07192ffb1c48871fef642fd1c1c29dac6bdc97d7c2a7c1e93a2985a65f033ba5e80c82d6b6017310288fabab72677d28fdc7cc18a85313746d4982"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@radix-ui/react-use-layout-effect@1.1.4",
+      "type": "library",
+      "name": "@radix-ui/react-use-layout-effect",
+      "version": "1.1.4",
+      "scope": "required",
+      "purl": "pkg:npm/%40radix-ui/react-use-layout-effect@1.1.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@radix-ui/react-use-layout-effect/-/react-use-layout-effect-1.1.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/radix-ui/primitives.git"
+        },
+        {
+          "type": "website",
+          "url": "https://radix-ui.com/primitives"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/radix-ui/primitives/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2b6d03911914c039f11183013dc83763abe82e4132e69e50426b336602e780a2a20bb773051fda12e2b7c35aa5c762560d4347e8596e6a161d811dc13fe41b63"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@react-three/fiber@9.7.0",
+      "type": "library",
+      "name": "@react-three/fiber",
+      "version": "9.7.0",
+      "scope": "required",
+      "author": "Paul Henschel (https://github.com/drcmda)",
+      "description": "A React renderer for Threejs",
+      "purl": "pkg:npm/%40react-three/fiber@9.7.0",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@react-three/fiber/-/fiber-9.7.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/react-three-fiber.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/react-three-fiber#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/react-three-fiber/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1169bd17071a39942efc4c455b9ae082808c3353497ade586f157129a384f8a4a772b8d4d16c7bd35eea4b2185beea6f88af3d9cc6060965370482b8748d5c97"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@swc/helpers@0.5.23",
+      "type": "library",
+      "name": "@swc/helpers",
+      "version": "0.5.23",
+      "scope": "required",
+      "author": "강동윤 <kdy1997.dev@gmail.com>",
+      "description": "External helpers for the swc project.",
+      "purl": "pkg:npm/%40swc/helpers@0.5.23",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.23.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/swc-project/swc.git"
+        },
+        {
+          "type": "website",
+          "url": "https://swc.rs"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/swc-project/swc/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e654ac30e4d751178f8250dfbee01052a9067a4f47836924b0e61acb69b4f9747ef9bd8d5982ffe2c5b2baf54122cf282a725ac64762f7085a2ffb2a375dda7f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "@types/react-reconciler@0.28.9",
+      "type": "library",
+      "name": "@types/react-reconciler",
+      "version": "0.28.9",
+      "scope": "required",
+      "description": "TypeScript definitions for react-reconciler",
+      "purl": "pkg:npm/%40types/react-reconciler@0.28.9",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/@types/react-reconciler/-/react-reconciler-0.28.9.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-reconciler"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1c73379f1c94677cc0ca55fc644cab0cd7765d93a74340f95dfba7245e452d09d96c71d8ab8516bd6d507de950357bf5202364c1885fc63c1f9ea8af601e9b16"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "aria-hidden@1.2.6",
+      "type": "library",
+      "name": "aria-hidden",
+      "version": "1.2.6",
+      "scope": "required",
+      "author": "Anton Korzunov <thekashey@gmail.com>",
+      "description": "Cast aria-hidden to everything, except...",
+      "purl": "pkg:npm/aria-hidden@1.2.6",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.6.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/theKashey/aria-hidden.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/theKashey/aria-hidden#readme"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8a4dd9802f5d63f95855533ef8e212b1a6037a0d6d6f456d3f9b8bde8ba1d64a0639a50c0cfa5b1487a2e099058a659414f9fdd2c6cc34c5d000854e96760a24"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "base64-js@1.5.1",
+      "type": "library",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "scope": "required",
+      "author": "T. Jameson Little <t.jameson.little@gmail.com>",
+      "description": "Base64 encoding/decoding in pure JS",
+      "purl": "pkg:npm/base64-js@1.5.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/beatgammit/base64-js.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/beatgammit/base64-js"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/beatgammit/base64-js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "00aa5a6251e7f2de1255b3870b2f9be7e28a82f478bebb03f2f6efadb890269b3b7ca0d3923903af2ea38b4ad42630b49336cd78f2f0cf1abc8b2a68e35a9e58"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "buffer@6.0.3",
+      "type": "library",
+      "name": "buffer",
+      "version": "6.0.3",
+      "scope": "required",
+      "author": "Feross Aboukhadijeh",
+      "description": "Node.js Buffer API, for the browser",
+      "purl": "pkg:npm/buffer@6.0.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/feross/buffer.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/feross/buffer"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/feross/buffer/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "153882a4dc6dc226591c465b71b4c87198c44552029fdcaafe90c591397de7f031cc3d6768172d37b60eebcae233f80b48363bb1dacc6f2f21a1f00362ebaa38"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "client-only@0.0.1",
+      "type": "library",
+      "name": "client-only",
+      "version": "0.0.1",
+      "scope": "required",
+      "description": "This is a marker package to indicate that a module can only be used in Client Components.",
+      "purl": "pkg:npm/client-only@0.0.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://reactjs.org/"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "215dcebb48d233366b777a59e3c9cb913f4303b020d699cfcda8908695bb73745b72aab3bf3cd5bbe2fc81fa8ca7ff08336310b528aa682c6badc7eef08f2b30"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "detect-node-es@1.1.0",
+      "type": "library",
+      "name": "detect-node-es",
+      "version": "1.1.0",
+      "scope": "required",
+      "author": "Ilya Kantor",
+      "description": "Detect Node.JS (as opposite to browser environment). ESM modification",
+      "purl": "pkg:npm/detect-node-es@1.1.0",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/thekashey/detect-node"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/thekashey/detect-node"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/thekashey/detect-node/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "ca9766254fd36c16f2d83c626eebfb64b5b706cd5012633b9c78c400d7e88492ef1345d5ba38ac9f5a8f25c67183ea83b9cb2bf9b3fa7cb0f5acf4b702127b11"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "get-nonce@1.0.1",
+      "type": "library",
+      "name": "get-nonce",
+      "version": "1.0.1",
+      "scope": "required",
+      "author": "Anton Korzunov <thekashey@gmail.com>",
+      "description": "returns nonce",
+      "purl": "pkg:npm/get-nonce@1.0.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/theKashey/get-nonce"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "1498584680da89ab5f12450af072a589c9aeff7486143e75ab78ad2831a8493cac4090677ce7315391b19e113513ab2807be8c6d3d0c06d9ca26e5f2031fbde9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "ieee754@1.2.1",
+      "type": "library",
+      "name": "ieee754",
+      "version": "1.2.1",
+      "scope": "required",
+      "author": "Feross Aboukhadijeh",
+      "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
+      "purl": "pkg:npm/ieee754@1.2.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git://github.com/feross/ieee754.git"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "75ccaa843bd7d42e3a95765c56a0a92be16d31141574830debf0dfe63b36ce8b94b2a1bb23ab05c62b480beeca60adbd29d5ce2c776ef732f8b059e85509ea68"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "its-fine@2.0.0",
+      "type": "library",
+      "name": "its-fine",
+      "version": "2.0.0",
+      "scope": "required",
+      "author": "Cody Bennett (https://github.com/codyjasonbennett)",
+      "description": "A collection of escape hatches for React.",
+      "purl": "pkg:npm/its-fine@2.0.0",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/its-fine/-/its-fine-2.0.0.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/its-fine"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "28b5620a65b1f78ccebe92f04a5b31eb238278c85961ac6b255f3b3e8e64fc5a19cdc3d26a1bcae6a27b7d8852eb5b198b98a49a1d92dc7cf9e40da5dd4ebd9e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "next@16.3.4",
+      "type": "library",
+      "name": "next",
+      "version": "16.3.4",
+      "scope": "required",
+      "description": "The React Framework",
+      "purl": "pkg:npm/next@16.3.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/next/-/next-16.3.4.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://nextjs.org"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "fd9b5fe827911fe7a311752b62da88e20912eba785207b92c2a8bad1181ca562a8771159c76fdda9508c281c082df0075d0f85d5bd6f02e7608f79a7c6ab6820"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "postcss@8.5.23",
+      "type": "library",
+      "name": "postcss",
+      "version": "8.5.23",
+      "scope": "required",
+      "author": "Andrey Sitnik <andrey@sitnik.es>",
+      "description": "Tool for transforming styles with JS plugins",
+      "purl": "pkg:npm/postcss@8.5.23",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://postcss.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/postcss/postcss/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "839d39f3acebe1b666c0589395f94cbbc1346c34dbe48e607abb60c002a6b1d5254d022166dba7cd4943d564b3c1c5563e8015a6cac0eaf95f083ee85ef47082"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-remove-scroll@2.7.2",
+      "type": "library",
+      "name": "react-remove-scroll",
+      "version": "2.7.2",
+      "scope": "required",
+      "author": "Anton Korzunov <thekashey@gmail.com>",
+      "description": "Disables scroll outside of `children` node.",
+      "purl": "pkg:npm/react-remove-scroll@2.7.2",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "22a6fd3630824ede877febce74d21919d4e21f5412aabdbb1ff124f6cbff6bdee07ee788ff9875b37c918b59e783331468e393a229f9748d5d5ca757885faed1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-remove-scroll-bar@2.3.8",
+      "type": "library",
+      "name": "react-remove-scroll-bar",
+      "version": "2.3.8",
+      "scope": "required",
+      "author": "Anton Korzunov <thekashey@gmail.com>",
+      "description": "Removes body scroll without content _shake_",
+      "purl": "pkg:npm/react-remove-scroll-bar@2.3.8",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "f6bfb28bdfa6814df700a723e886d3f684423bbf16ae24a3eadfdc17c0d605927d68e18f393103bdd503cf51702a29bb4175b0987aad7479d125f840c441b8e9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-style-singleton@2.2.3",
+      "type": "library",
+      "name": "react-style-singleton",
+      "version": "2.2.3",
+      "scope": "required",
+      "author": "Anton Korzunov (thekashey@gmail.com)",
+      "description": "Just create a single stylesheet...",
+      "purl": "pkg:npm/react-style-singleton@2.2.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/theKashey/react-style-singleton"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/theKashey/react-style-singleton#readme"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/theKashey/react-style-singleton/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6fa8d2bf1bd59f2a6d0222e36e458b13f94e9d1e257d3b43025f9e502ed1672f9041673ac11cc8576084eb106e3260f1736a888a1b430990f934f38597b7d105"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "react-use-measure@2.1.7",
+      "type": "library",
+      "name": "react-use-measure",
+      "version": "2.1.7",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "Utility to measure view bounds",
+      "purl": "pkg:npm/react-use-measure@2.1.7",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/react-use-measure/-/react-use-measure-2.1.7.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/react-use-measure"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "2abbdc028d7723feb41e9c063b98e95bb13d0dfbac2b22cf2efb87954c8fe73aa79803e135ceaa4d18d442b7530039749693e90d5536fc6839d5494e1875db76"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "sharp@0.35.4",
+      "type": "library",
+      "name": "sharp",
+      "version": "0.35.4",
+      "scope": "optional",
+      "author": "Lovell Fuller <npm@lovell.info>",
+      "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
+      "purl": "pkg:npm/sharp@0.35.4",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/sharp/-/sharp-0.35.4.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/lovell/sharp.git"
+        },
+        {
+          "type": "website",
+          "url": "https://sharp.pixelplumbing.com"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "9fefbc5d6723fa308eaf620e97b87c2db2a71810d8e1a3db9a9acc38d04d15d9f42265eaa4656fe739620ecd15f476e66c240ba5bba8d9e8fdac0a0e413bcc0c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "semver@7.8.5",
+      "type": "library",
+      "name": "semver",
+      "version": "7.8.5",
+      "scope": "optional",
+      "author": "GitHub Inc.",
+      "description": "The semantic version parser used by npm.",
+      "purl": "pkg:npm/semver@7.8.5",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/npm/node-semver.git"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "63bfca0ec6fc2e3a28669c1aa86cae94ee8342592c8029dc7211c693eb19218e1206f52870c044147e54af57c8e1d57e26f974c3a723bee71a222e34a6e462a0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "styled-jsx@5.1.6",
+      "type": "library",
+      "name": "styled-jsx",
+      "version": "5.1.6",
+      "scope": "required",
+      "description": "Full CSS support for JSX without compromises",
+      "purl": "pkg:npm/styled-jsx@5.1.6",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a925720d378ca2d76f418a0758b346c111491c2fa2f99bdd051628b0e1600be5a0d6fc787eb376fd11bf340ed262aaaf28d2dfdfd3f62d2440da9bba9f45d864"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "suspend-react@0.1.3",
+      "type": "library",
+      "name": "suspend-react",
+      "version": "0.1.3",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "Integrate React Suspense into your apps",
+      "purl": "pkg:npm/suspend-react@0.1.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/suspend-react/-/suspend-react-0.1.3.tgz"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/suspend-react#readme"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "6aa95d2a05fd699aa9a03a777bcfc167c0e6ef1d69265faa23764ac433748bf2104d6530071fcc6a79a5549df0a30a9b9e8e9cd9b9a221fb3e526e8b6ec8c9c9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "three@0.185.1",
+      "type": "library",
+      "name": "three",
+      "version": "0.185.1",
+      "scope": "required",
+      "author": "mrdoob",
+      "description": "JavaScript 3D library",
+      "purl": "pkg:npm/three@0.185.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/three/-/three-0.185.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mrdoob/three.js"
+        },
+        {
+          "type": "website",
+          "url": "https://threejs.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/mrdoob/three.js/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "e5aa231425cac278c1459bd49eddd615f11cbd426090de4b9628d114df7984ccbc595906e08d1035c244f8eb96bee2746ce752b6b6df5e7d2991debf43288096"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "tslib@2.8.1",
+      "type": "library",
+      "name": "tslib",
+      "version": "2.8.1",
+      "scope": "required",
+      "author": "Microsoft Corp.",
+      "description": "Runtime library for TypeScript helper functions",
+      "purl": "pkg:npm/tslib@2.8.1",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/Microsoft/tslib.git"
+        },
+        {
+          "type": "website",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/Microsoft/TypeScript/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "a0916ef781d06fe29576e49440bef09e99aa9df98bb0e03f9c087a6fa107d30084a0ad3f98f79753a737c0a0d5f373243ae1cf447b525ca294f7d2016b34bfdb"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "0BSD"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "use-callback-ref@1.3.3",
+      "type": "library",
+      "name": "use-callback-ref",
+      "version": "1.3.3",
+      "scope": "required",
+      "author": "theKashey <thekashey@gmail.com>",
+      "description": "The same useRef, but with callback",
+      "purl": "pkg:npm/use-callback-ref@1.3.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "8d02f79519e871a16dbb7574d094e8633ff8424356b30c628c368254d6518914cedc74032ec76ed59b66214bd5e323e9fabbd69b98f4cb44c6fd2eb572e8a34e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "use-sidecar@1.1.3",
+      "type": "library",
+      "name": "use-sidecar",
+      "version": "1.1.3",
+      "scope": "required",
+      "author": "theKashey <thekashey@gmail.com>",
+      "description": "Sidecar code splitting utils",
+      "purl": "pkg:npm/use-sidecar@1.1.3",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/theKashey/use-sidecar"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/theKashey/use-sidecar"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "15e770d1a66f921ca7a0f625039597acc080326fa7496759b7a973250ece93c4ba43e56c1e61e94569dd55127c05ed196e47cf7392d1607fb95ebcd770478b45"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "use-sync-external-store@1.6.0",
+      "type": "library",
+      "name": "use-sync-external-store",
+      "version": "1.6.0",
+      "scope": "required",
+      "description": "Backwards compatible shim for React's useSyncExternalStore. Works with any React that supports hooks.",
+      "purl": "pkg:npm/use-sync-external-store@1.6.0",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/facebook/react.git"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "3e9e864b018ffcdacf22bc551402243907b2c3c9457a73878a34169144eb0efac5e002eaca53f60bf28291e4bd76950cdcabd84508676b9bedec82fde7e650f7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    {
+      "bom-ref": "zustand@5.0.15",
+      "type": "library",
+      "name": "zustand",
+      "version": "5.0.15",
+      "scope": "required",
+      "author": "Paul Henschel",
+      "description": "🐻 Bear necessities for state management in React",
+      "purl": "pkg:npm/zustand@5.0.15",
+      "properties": [],
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://registry.npmjs.org/zustand/-/zustand-5.0.15.tgz"
+        },
+        {
+          "type": "vcs",
+          "url": "git+https://github.com/pmndrs/zustand.git"
+        },
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/zustand"
+        },
+        {
+          "type": "issue-tracker",
+          "url": "https://github.com/pmndrs/zustand/issues"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "3294848d1881900f5cad261e3941f7dab242ed256a01b9b416a72a81efdb522d8f3e82dc05628eb06f82f267af9a9afc4f05c705590285b6c98b2be413e8bfdc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "scrap2sync-web@0.1.0-rc.1",
+      "dependsOn": [
+        "@radix-ui/react-dialog@1.1.23",
+        "@react-three/fiber@9.7.0",
+        "next@16.3.4",
+        "three@0.185.1"
+      ]
+    },
+    {
+      "ref": "@img/colour@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "@img/sharp-win32-x64@0.35.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "@next/env@16.3.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "@next/swc-win32-x64-msvc@16.3.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/primitive@1.1.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/react-compose-refs@1.1.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/react-context@1.2.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/react-dialog@1.1.23",
+      "dependsOn": [
+        "aria-hidden@1.2.6",
+        "react-remove-scroll@2.7.2",
+        "@radix-ui/primitive@1.1.7",
+        "@radix-ui/react-compose-refs@1.1.5",
+        "@radix-ui/react-context@1.2.2",
+        "@radix-ui/react-focus-guards@1.1.6",
+        "@radix-ui/react-focus-scope@1.1.16",
+        "@radix-ui/react-id@1.1.4",
+        "@radix-ui/react-portal@1.1.17",
+        "@radix-ui/react-presence@1.1.10",
+        "@radix-ui/react-primitive@2.1.10",
+        "@radix-ui/react-slot@1.3.3",
+        "@radix-ui/react-use-controllable-state@1.2.6",
+        "@radix-ui/react-use-layout-effect@1.1.4",
+        "@radix-ui/react-dismissable-layer@1.1.19"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-dismissable-layer@1.1.19",
+      "dependsOn": [
+        "@radix-ui/primitive@1.1.7",
+        "@radix-ui/react-compose-refs@1.1.5",
+        "@radix-ui/react-primitive@2.1.10",
+        "@radix-ui/react-use-callback-ref@1.1.4",
+        "@radix-ui/react-use-effect-event@0.0.5"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-focus-guards@1.1.6",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/react-focus-scope@1.1.16",
+      "dependsOn": [
+        "@radix-ui/react-compose-refs@1.1.5",
+        "@radix-ui/react-primitive@2.1.10",
+        "@radix-ui/react-use-callback-ref@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-id@1.1.4",
+      "dependsOn": [
+        "@radix-ui/react-use-layout-effect@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-portal@1.1.17",
+      "dependsOn": [
+        "@radix-ui/react-primitive@2.1.10",
+        "@radix-ui/react-use-layout-effect@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-presence@1.1.10",
+      "dependsOn": [
+        "@radix-ui/react-use-layout-effect@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-primitive@2.1.10",
+      "dependsOn": [
+        "@radix-ui/react-slot@1.3.3"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-slot@1.3.3",
+      "dependsOn": [
+        "@radix-ui/react-compose-refs@1.1.5"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-use-callback-ref@1.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "@radix-ui/react-use-controllable-state@1.2.6",
+      "dependsOn": [
+        "@radix-ui/primitive@1.1.7",
+        "@radix-ui/react-use-effect-event@0.0.5",
+        "@radix-ui/react-use-layout-effect@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-use-effect-event@0.0.5",
+      "dependsOn": [
+        "@radix-ui/react-use-layout-effect@1.1.4"
+      ]
+    },
+    {
+      "ref": "@radix-ui/react-use-layout-effect@1.1.4",
+      "dependsOn": []
+    },
+    {
+      "ref": "@react-three/fiber@9.7.0",
+      "dependsOn": [
+        "three@0.185.1",
+        "base64-js@1.5.1",
+        "buffer@6.0.3",
+        "its-fine@2.0.0",
+        "react-use-measure@2.1.7",
+        "suspend-react@0.1.3",
+        "use-sync-external-store@1.6.0",
+        "zustand@5.0.15"
+      ]
+    },
+    {
+      "ref": "@swc/helpers@0.5.23",
+      "dependsOn": [
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "@types/react-reconciler@0.28.9",
+      "dependsOn": []
+    },
+    {
+      "ref": "aria-hidden@1.2.6",
+      "dependsOn": [
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "base64-js@1.5.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "buffer@6.0.3",
+      "dependsOn": [
+        "base64-js@1.5.1",
+        "ieee754@1.2.1"
+      ]
+    },
+    {
+      "ref": "client-only@0.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "detect-node-es@1.1.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "get-nonce@1.0.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "ieee754@1.2.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "its-fine@2.0.0",
+      "dependsOn": [
+        "@types/react-reconciler@0.28.9"
+      ]
+    },
+    {
+      "ref": "next@16.3.4",
+      "dependsOn": [
+        "@next/env@16.3.4",
+        "@swc/helpers@0.5.23",
+        "postcss@8.5.23",
+        "styled-jsx@5.1.6",
+        "sharp@0.35.4",
+        "@next/swc-win32-x64-msvc@16.3.4"
+      ]
+    },
+    {
+      "ref": "postcss@8.5.23",
+      "dependsOn": []
+    },
+    {
+      "ref": "react-remove-scroll@2.7.2",
+      "dependsOn": [
+        "react-remove-scroll-bar@2.3.8",
+        "react-style-singleton@2.2.3",
+        "tslib@2.8.1",
+        "use-callback-ref@1.3.3",
+        "use-sidecar@1.1.3"
+      ]
+    },
+    {
+      "ref": "react-remove-scroll-bar@2.3.8",
+      "dependsOn": [
+        "react-style-singleton@2.2.3",
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "react-style-singleton@2.2.3",
+      "dependsOn": [
+        "tslib@2.8.1",
+        "get-nonce@1.0.1"
+      ]
+    },
+    {
+      "ref": "react-use-measure@2.1.7",
+      "dependsOn": []
+    },
+    {
+      "ref": "sharp@0.35.4",
+      "dependsOn": [
+        "@img/colour@1.1.0",
+        "semver@7.8.5",
+        "@img/sharp-win32-x64@0.35.4"
+      ]
+    },
+    {
+      "ref": "semver@7.8.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "styled-jsx@5.1.6",
+      "dependsOn": [
+        "client-only@0.0.1"
+      ]
+    },
+    {
+      "ref": "suspend-react@0.1.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "three@0.185.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "tslib@2.8.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "use-callback-ref@1.3.3",
+      "dependsOn": [
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "use-sidecar@1.1.3",
+      "dependsOn": [
+        "detect-node-es@1.1.0",
+        "tslib@2.8.1"
+      ]
+    },
+    {
+      "ref": "use-sync-external-store@1.6.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "zustand@5.0.15",
+      "dependsOn": [
+        "use-sync-external-store@1.6.0"
+      ]
+    }
+  ]
+}

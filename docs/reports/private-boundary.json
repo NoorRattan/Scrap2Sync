@@ -1,0 +1,10 @@
+{
+  "filesInspected": 87,
+  "commitsInspected": 0,
+  "historyBlobsInspected": 0,
+  "privateReferenceCount": 11,
+  "privateReferenceComparison": "pass",
+  "failures": [],
+  "result": "pass",
+  "limitations": "Exact files, names, private source paths and long verbatim prose are checked; this is not a proof against all possible paraphrases or covert encodings."
+}

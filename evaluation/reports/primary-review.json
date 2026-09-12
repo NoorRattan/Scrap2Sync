@@ -1,0 +1,2150 @@
+{
+  "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+  "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+  "reviewPacketSha256": "7554923059bc706267d603c7fd8513a8b2d9396b09b811c766ad8bfe48b68b76",
+  "reviewer": {
+    "type": "model",
+    "name": "Codex semantic release reviewer",
+    "modelOrRole": "OpenAI Codex (GPT-5)",
+    "provider": "OpenAI",
+    "reviewedAt": "2026-09-12T17:10:16.858241+00:00",
+    "independent": false
+  },
+  "method": "Read all 69 current source/output rows and their annotations. Long boundary values were checked using labelled previews plus complete lengths and SHA-256 equality. Counts, placements, warnings, editing effort, and rationales record that semantic review.",
+  "records": [
+    {
+      "caseId": "Q-001",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-001: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-002",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-002: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-003",
+      "supportedOutputFacts": 4,
+      "totalOutputFacts": 4,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-003: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-004",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-004: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-005",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-005: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-006",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-006: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-007",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-007: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-008",
+      "supportedOutputFacts": 0,
+      "totalOutputFacts": 0,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": []
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-008: the explicit absence of a current blocker is correctly represented by empty sections without inventing work or an active blocker."
+    },
+    {
+      "caseId": "Q-009",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-009: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-010",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-010: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-011",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-011: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-012",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-012: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-013",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-013: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-014",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-014: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-015",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-015: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-016",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-016: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-017",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-017: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-018",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-018: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-019",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-019: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-020",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-020: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-021",
+      "supportedOutputFacts": 12,
+      "totalOutputFacts": 12,
+      "representedSourceFacts": 12,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-021: all twelve distinct planned fixture reviews are retained in Today, and the preference-overflow warning accurately explains the extra items."
+    },
+    {
+      "caseId": "Q-022",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "Reviewed Q-022: both source-supported statements are preserved without added facts. The language warning is correct; moving the waiting statement to Blockers would improve placement."
+    },
+    {
+      "caseId": "Q-024",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-024: the completed review and still-blocked preview are correctly separated, retaining the exact ticket and approval dependency."
+    },
+    {
+      "caseId": "Q-025",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-025: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-026",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-026: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-027",
+      "supportedOutputFacts": 4,
+      "totalOutputFacts": 4,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-027: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-028",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-028: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-029",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-029: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-030",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-030: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-031",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-031: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-032",
+      "supportedOutputFacts": 0,
+      "totalOutputFacts": 0,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": []
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-032: the explicit absence of a current blocker is correctly represented by empty sections without inventing work or an active blocker."
+    },
+    {
+      "caseId": "Q-033",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-033: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-034",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-034: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-035",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-035: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-036",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-036: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-037",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-037: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-038",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-038: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-039",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-039: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-040",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-040: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-041",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-041: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-042",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-042: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-043",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-043: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-044",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-044: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-045",
+      "supportedOutputFacts": 12,
+      "totalOutputFacts": 12,
+      "representedSourceFacts": 12,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-045: all twelve distinct planned fixture reviews are retained in Today, and the preference-overflow warning accurately explains the extra items."
+    },
+    {
+      "caseId": "Q-046",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "Reviewed Q-046: both source-supported statements are preserved without added facts. The language warning is correct; moving the waiting statement to Blockers would improve placement."
+    },
+    {
+      "caseId": "Q-048",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-048: the completed review and still-blocked preview are correctly separated, retaining the exact ticket and approval dependency."
+    },
+    {
+      "caseId": "Q-049",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-049: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-050",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-050: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-051",
+      "supportedOutputFacts": 4,
+      "totalOutputFacts": 4,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-051: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-052",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-052: completed work, planned work, and the active blocker are all preserved in their correct sections with no unsupported cause or outcome."
+    },
+    {
+      "caseId": "Q-053",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-053: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-054",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-054: completed and planned facts are faithfully separated into Yesterday and Today. Removing the leading conjunction would improve copy polish."
+    },
+    {
+      "caseId": "Q-055",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-055: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-056",
+      "supportedOutputFacts": 0,
+      "totalOutputFacts": 0,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": []
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-056: the explicit absence of a current blocker is correctly represented by empty sections without inventing work or an active blocker."
+    },
+    {
+      "caseId": "Q-057",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-057: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-058",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-058: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-059",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-059: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-060",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-060: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-061",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-061: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-062",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-062: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-063",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-063: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-064",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-064: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-065",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-065: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-066",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-066: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-067",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-067: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-068",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-068: the extractive candidate preserves every annotated source fact, status, qualifier, and protected value without adding a forbidden claim; its section and any cautionary warning are appropriate for the supplied note."
+    },
+    {
+      "caseId": "Q-069",
+      "supportedOutputFacts": 12,
+      "totalOutputFacts": 12,
+      "representedSourceFacts": 12,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-069: all twelve distinct planned fixture reviews are retained in Today, and the preference-overflow warning accurately explains the extra items."
+    },
+    {
+      "caseId": "Q-070",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 1,
+        "moves": 1
+      },
+      "rationale": "Reviewed Q-070: the complete Japanese source is preserved without added facts and is correctly marked as not quality-evaluated; splitting the waiting clause into Blockers would improve the draft."
+    },
+    {
+      "caseId": "Q-072",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Reviewed Q-072: the completed review and still-blocked preview are correctly separated, retaining the exact ticket and approval dependency."
+    }
+  ],
+  "limitations": [
+    "Reviewer is part of the implementation context and is not independent.",
+    "Fallback-only review cannot establish live-model usefulness or deployed quality."
+  ]
+}

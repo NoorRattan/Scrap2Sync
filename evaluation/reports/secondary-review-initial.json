@@ -1,0 +1,650 @@
+{
+  "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+  "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+  "reviewPacketSha256": "8ebe7818eda06807c9efc33fb55a2488313f11efa5a057991ab4456652d65cf8",
+  "reviewer": {
+    "type": "model",
+    "name": "Codex evaluation secondary reviewer",
+    "modelOrRole": "OpenAI GPT-6 / Codex sub-agent",
+    "provider": "OpenAI",
+    "reviewedAt": "2026-09-12T10:33:28Z",
+    "independent": false
+  },
+  "method": "Actual source/output/rubric reading of Q-001 through Q-019 and Q-021. Long repetitive boundary fields were read via labelled beginning/end previews and checked against complete-value lengths, hashes and exact preservation evidence. Counts and rationales were authored after reading, not produced by span-matching automation.",
+  "limitations": [
+    "Shared model and implementation-team context; not independent external validation.",
+    "Single-output factuality review; no pairwise usefulness claim.",
+    "This initial review preserves pre-repair findings and must not be applied to a changed output packet."
+  ],
+  "records": [
+    {
+      "caseId": "Q-001",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Completed cache cleanup is retained as completed work with no invented speed or deployment claim."
+    },
+    {
+      "caseId": "Q-002",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "An inspection plan remains a plan; no completed inspection or diagnosed retry cause is asserted."
+    },
+    {
+      "caseId": "Q-003",
+      "supportedOutputFacts": 4,
+      "totalOutputFacts": 4,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "today",
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "Cleanup, review intention, blocked access and unknown cause are all supported. The cause qualifier is detached into Today; move it beside the blocker to preserve context."
+    },
+    {
+      "caseId": "Q-004",
+      "supportedOutputFacts": 3,
+      "totalOutputFacts": 3,
+      "representedSourceFacts": 3,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "All three explicitly headed facts retain the correct status; no sample approval or export resolution is invented."
+    },
+    {
+      "caseId": "Q-005",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Completed review and future proposal are distinguished correctly. Remove the leading conjunction from the planned item for copy polish."
+    },
+    {
+      "caseId": "Q-006",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 1,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Review performed and continued review are both preserved. The continuing item would read better without its initial conjunction; no claim of full cancellation coverage appears."
+    },
+    {
+      "caseId": "Q-007",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today",
+            "blockers"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "The active upload blocker, exact diagnostic and unknown cause are supported. The uncertainty qualifier belongs with the blocker rather than in Today."
+    },
+    {
+      "caseId": "Q-008",
+      "supportedOutputFacts": 0,
+      "totalOutputFacts": 0,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": []
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Empty sections correctly represent the explicit absence of blockers. No user-visible work facts are invented; the absence assertion counts as represented source context."
+    },
+    {
+      "caseId": "Q-009",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The previously blocked fetch is explicitly resolved and remains completed context, with no active blocker or invented cause."
+    },
+    {
+      "caseId": "Q-010",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Tentative cache attention and uncertain timing remain tentative. Both exact clauses stay in Today with targeted uncertainty warnings, without a commitment or diagnosis."
+    },
+    {
+      "caseId": "Q-011",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "Ticket and version remain exact, and only completed checks are asserted; deployment is not inferred."
+    },
+    {
+      "caseId": "Q-012",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "Date, count and percentage are unchanged and no causal claim appears. The past-tense measurement is completed work, so its Today placement needs correction despite the visible uncertainty notice."
+    },
+    {
+      "caseId": "Q-013",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The complete maximal-length URL is preserved, with no claim it was visited or deployed. Its temporal status is unstated and conservative Today placement is visibly warned."
+    },
+    {
+      "caseId": "Q-014",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The complete quoted diagnostic remains exact. No cause, fix or presently active incident is inferred; the warned Today placement is acceptable for uncertain status."
+    },
+    {
+      "caseId": "Q-015",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The maximal repeated archive-review description remains verbatim completed work, with no deletion or deployment claim. Repetition is source content, not an added fact."
+    },
+    {
+      "caseId": "Q-016",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday",
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 1
+      },
+      "rationale": "The named review and exact casing constraint are supported, but separating the constraint into Today detaches it from the completed-review context; move it alongside that context."
+    },
+    {
+      "caseId": "Q-017",
+      "supportedOutputFacts": 2,
+      "totalOutputFacts": 2,
+      "representedSourceFacts": 2,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "yesterday"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The completed cleanup and intended documentation review are correctly separated; informal wording and emoji remain source-supported."
+    },
+    {
+      "caseId": "Q-018",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The plan and disabled-widget markup are preserved literally, without converting markup to execution or claiming the review is complete."
+    },
+    {
+      "caseId": "Q-019",
+      "supportedOutputFacts": 1,
+      "totalOutputFacts": 1,
+      "representedSourceFacts": 1,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "The JSON fixture is retained as data, including its false boolean and numeric value, and the instruction not to change it remains a source-supported plan."
+    },
+    {
+      "caseId": "Q-021",
+      "supportedOutputFacts": 12,
+      "totalOutputFacts": 12,
+      "representedSourceFacts": 12,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": 0,
+      "criticalOmissions": 0,
+      "falseActiveBlockers": 0,
+      "warningsCorrect": true,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": [
+            "today"
+          ]
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": [
+            "today"
+          ]
+        }
+      ],
+      "editingEffort": {
+        "edits": 0,
+        "deletes": 0,
+        "additions": 0,
+        "moves": 0
+      },
+      "rationale": "All twelve distinct ticketed review plans are present in Today. The preference-overflow warning identifies all affected fragments; no fixture is silently removed."
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "components": {
+    "schemas": {
+      "DraftItem": {
+        "additionalProperties": false,
+        "properties": {
+          "itemId": {
+            "pattern": "^D[0-9]{3,6}$",
+            "title": "Itemid",
+            "type": "string"
+          },
+          "sourceFragmentIds": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 256,
+            "minItems": 1,
+            "title": "Sourcefragmentids",
+            "type": "array"
+          },
+          "text": {
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "itemId",
+          "text",
+          "sourceFragmentIds"
+        ],
+        "title": "DraftItem",
+        "type": "object"
+      },
+      "EngineVersion": {
+        "enum": [
+          "structured-llm-v1",
+          "rules-fallback-v1"
+        ],
+        "type": "string"
+      },
+      "ErrorCode": {
+        "enum": [
+          "MALFORMED_JSON",
+          "REQUEST_IN_PROGRESS",
+          "PAYLOAD_TOO_LARGE",
+          "UNSUPPORTED_MEDIA_TYPE",
+          "VALIDATION_ERROR",
+          "RATE_LIMITED",
+          "SERVICE_UNAVAILABLE",
+          "INTERNAL_ERROR"
+        ],
+        "type": "string"
+      },
+      "ErrorDetail": {
+        "additionalProperties": false,
+        "properties": {
+          "clientRequestId": {
+            "anyOf": [
+              {
+                "format": "uuid",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Clientrequestid"
+          },
+          "code": {
+            "$ref": "#/components/schemas/ErrorCode"
+          },
+          "fieldErrors": {
+            "additionalProperties": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "title": "Fielderrors",
+            "type": "object"
+          },
+          "message": {
+            "title": "Message",
+            "type": "string"
+          },
+          "requestId": {
+            "format": "uuid",
+            "title": "Requestid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "requestId",
+          "clientRequestId",
+          "fieldErrors"
+        ],
+        "title": "ErrorDetail",
+        "type": "object"
+      },
+      "ErrorResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "title": "ErrorResponse",
+        "type": "object"
+      },
+      "GenerateRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "clientRequestId": {
+            "format": "uuid",
+            "title": "Clientrequestid",
+            "type": "string"
+          },
+          "rawNotes": {
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Rawnotes",
+            "type": "string"
+          },
+          "styleProfile": {
+            "$ref": "#/components/schemas/StyleProfile"
+          }
+        },
+        "required": [
+          "rawNotes",
+          "styleProfile",
+          "clientRequestId"
+        ],
+        "title": "GenerateRequest",
+        "type": "object"
+      },
+      "GenerateResponse": {
+        "additionalProperties": false,
+        "properties": {
+          "clientRequestId": {
+            "format": "uuid",
+            "title": "Clientrequestid",
+            "type": "string"
+          },
+          "draft": {
+            "$ref": "#/components/schemas/StandupDraft"
+          },
+          "durationMs": {
+            "minimum": 0.0,
+            "title": "Durationms",
+            "type": "integer"
+          },
+          "engineVersion": {
+            "$ref": "#/components/schemas/EngineVersion"
+          },
+          "requestId": {
+            "format": "uuid",
+            "title": "Requestid",
+            "type": "string"
+          },
+          "warnings": {
+            "items": {
+              "$ref": "#/components/schemas/GenerationWarning"
+            },
+            "maxItems": 512,
+            "title": "Warnings",
+            "type": "array"
+          }
+        },
+        "required": [
+          "draft",
+          "engineVersion",
+          "warnings",
+          "durationMs",
+          "requestId",
+          "clientRequestId"
+        ],
+        "title": "GenerateResponse",
+        "type": "object"
+      },
+      "GenerationWarning": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "$ref": "#/components/schemas/WarningCode"
+          },
+          "itemId": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Itemid"
+          },
+          "message": {
+            "maxLength": 300,
+            "minLength": 1,
+            "title": "Message",
+            "type": "string"
+          },
+          "section": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Section"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceFragmentIds": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 256,
+            "title": "Sourcefragmentids",
+            "type": "array"
+          },
+          "warningId": {
+            "pattern": "^W[0-9]{3,6}$",
+            "title": "Warningid",
+            "type": "string"
+          }
+        },
+        "required": [
+          "warningId",
+          "code",
+          "message",
+          "section",
+          "itemId",
+          "sourceFragmentIds"
+        ],
+        "title": "GenerationWarning",
+        "type": "object"
+      },
+      "Liveness": {
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "const": "ok",
+            "default": "ok",
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "title": "Liveness",
+        "type": "object"
+      },
+      "PrimaryState": {
+        "enum": [
+          "configured",
+          "unconfigured",
+          "available",
+          "degraded",
+          "circuit_open"
+        ],
+        "type": "string"
+      },
+      "ProfileId": {
+        "enum": [
+          "concise-bullets",
+          "standard-update",
+          "async-detail",
+          "custom"
+        ],
+        "type": "string"
+      },
+      "Readiness": {
+        "additionalProperties": false,
+        "properties": {
+          "primaryFormatter": {
+            "$ref": "#/components/schemas/PrimaryState"
+          },
+          "status": {
+            "const": "ready",
+            "default": "ready",
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "primaryFormatter"
+        ],
+        "title": "Readiness",
+        "type": "object"
+      },
+      "Section": {
+        "enum": [
+          "yesterday",
+          "today",
+          "blockers"
+        ],
+        "type": "string"
+      },
+      "SectionHeaders": {
+        "additionalProperties": false,
+        "properties": {
+          "blockers": {
+            "maxLength": 30,
+            "minLength": 1,
+            "title": "Blockers",
+            "type": "string"
+          },
+          "today": {
+            "maxLength": 30,
+            "minLength": 1,
+            "title": "Today",
+            "type": "string"
+          },
+          "yesterday": {
+            "maxLength": 30,
+            "minLength": 1,
+            "title": "Yesterday",
+            "type": "string"
+          }
+        },
+        "required": [
+          "yesterday",
+          "today",
+          "blockers"
+        ],
+        "title": "SectionHeaders",
+        "type": "object"
+      },
+      "StandupDraft": {
+        "additionalProperties": false,
+        "properties": {
+          "blockers": {
+            "items": {
+              "$ref": "#/components/schemas/DraftItem"
+            },
+            "maxItems": 256,
+            "title": "Blockers",
+            "type": "array"
+          },
+          "today": {
+            "items": {
+              "$ref": "#/components/schemas/DraftItem"
+            },
+            "maxItems": 256,
+            "title": "Today",
+            "type": "array"
+          },
+          "yesterday": {
+            "items": {
+              "$ref": "#/components/schemas/DraftItem"
+            },
+            "maxItems": 256,
+            "title": "Yesterday",
+            "type": "array"
+          }
+        },
+        "required": [
+          "yesterday",
+          "today",
+          "blockers"
+        ],
+        "title": "StandupDraft",
+        "type": "object"
+      },
+      "StyleProfile": {
+        "additionalProperties": false,
+        "properties": {
+          "headers": {
+            "$ref": "#/components/schemas/SectionHeaders"
+          },
+          "id": {
+            "$ref": "#/components/schemas/ProfileId"
+          },
+          "label": {
+            "maxLength": 40,
+            "minLength": 1,
+            "title": "Label",
+            "type": "string"
+          },
+          "layout": {
+            "enum": [
+              "bullets",
+              "paragraphs"
+            ],
+            "title": "Layout",
+            "type": "string"
+          },
+          "preferredMaxItemsPerSection": {
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "Preferredmaxitemspersection",
+            "type": "integer"
+          },
+          "tone": {
+            "enum": [
+              "direct",
+              "neutral-professional"
+            ],
+            "title": "Tone",
+            "type": "string"
+          },
+          "verbosity": {
+            "enum": [
+              "brief",
+              "standard"
+            ],
+            "title": "Verbosity",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "layout",
+          "verbosity",
+          "tone",
+          "headers",
+          "preferredMaxItemsPerSection"
+        ],
+        "title": "StyleProfile",
+        "type": "object"
+      },
+      "WarningCode": {
+        "enum": [
+          "FALLBACK_USED",
+          "UNCERTAIN_SECTION",
+          "POSSIBLE_FACT_OMISSION",
+          "PROFILE_LIMIT_EXCEEDED",
+          "LANGUAGE_NOT_EVALUATED"
+        ],
+        "type": "string"
+      }
+    }
+  },
+  "info": {
+    "title": "Scrap2Sync API",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/generate": {
+      "post": {
+        "operationId": "generate_api_v1_generate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenerateResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Bad Request"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Conflict"
+          },
+          "413": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Content Too Large"
+          },
+          "415": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unsupported Media Type"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Internal Server Error"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "summary": "Generate",
+        "tags": [
+          "drafts"
+        ]
+      }
+    },
+    "/api/v1/health/live": {
+      "get": {
+        "operationId": "live_api_v1_health_live_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Liveness"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Live",
+        "tags": [
+          "health"
+        ]
+      }
+    },
+    "/api/v1/health/ready": {
+      "get": {
+        "operationId": "ready_api_v1_health_ready_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Readiness"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Ready",
+        "tags": [
+          "health"
+        ]
+      }
+    }
+  }
+}

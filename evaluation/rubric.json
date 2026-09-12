@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "declaredAt": "2026-09-05T13:55:15Z",
+  "specificationRevision": "REV-002",
+  "authorship": {
+    "type": "model-authored",
+    "author": "OpenAI GPT-6 / Codex",
+    "independent": false,
+    "limitation": "RISK-005: the initial benchmark author, implementation team, and semantic reviewer share model context; scores are portfolio evidence, not independent validation."
+  },
+  "interpretation": {
+    "invalidInputTag": "empty-invalid",
+    "invalidInputExpectation": "HTTP 422 VALIDATION_ERROR with a rawNotes field error; neither formatter is invoked. Invalid cases are scored as input rejection, excluded from successful-response schema and placement denominators, and never hidden from the report.",
+    "emptyAllowedSections": "An explicit absence assertion. Negated-blocker-only input should produce empty sections. It must not be counted as omitted work or converted to an active blocker. Score the source assertion from the empty Blockers state.",
+    "ambiguousPlacement": "Cases with uncertain=true or multiple allowedSections are excluded from unambiguous placement F1, while remaining eligible for factuality, exact preservation, warnings, and coverage checks.",
+    "sourceFacts": "Facts are annotated supporting spans, not a promise that runtime segmentation produces identical spans. Match semantic support and exact protected strings across the complete returned draft.",
+    "forbiddenClaims": "These are unsupported propositions to detect semantically, not a blacklist that prohibits quoting the same text as source data.",
+    "providerPathTags": "Exercise each tagged failure with a deterministic provider stub. Provider-protected-omission removes a protected span when present and otherwise returns empty arrays to exercise omission validation. These are integration checks, not measured live model quality.",
+    "maximalItems": "Owner-authorized correction: an item may contain up to 10,000 Unicode code points; normalized input remains limited to 10,000 and total draft text to 20,000.",
+    "pairwiseBlinding": "Assign deterministic randomized A/B display labels before review, retain the engine key separately, and reveal identities after scoring. No live-provider usefulness claim is possible from stub output.",
+    "semanticReview": "Record reviewer type, model/version or human role, case-level supported/unsupported/omitted facts, and rationale. Exact-match automation is not a substitute for semantic reviewer scores.",
+    "doubleReview": "When two reviewers are available, double-score at least twenty cases and record agreement and adjudication. Otherwise report a single reviewer and no agreement claim."
+  },
+  "criteria": [
+    {"id": "semantic-fact-precision", "numerator": "supported user-visible output facts", "denominator": "all user-visible output facts", "review": "semantic", "emptyDenominator": "not_applicable"},
+    {"id": "semantic-fact-recall", "numerator": "represented required source facts, including correctly rendered absence assertions", "denominator": "all required source facts", "review": "semantic", "emptyDenominator": "not_applicable"},
+    {"id": "protected-token-preservation", "numerator": "required protected token occurrences preserved exactly", "denominator": "required protected token occurrences", "review": "automated-exact", "emptyDenominator": "not_applicable"},
+    {"id": "novel-or-changed-protected-facts", "measure": "count", "review": "automated-plus-semantic"},
+    {"id": "section-placement", "measure": "macro precision, recall and F1 over Yesterday, Today and Blockers on unambiguous required facts", "review": "semantic"},
+    {"id": "negation-resolution", "measure": "false active blocker count and preserved resolution/negation count", "review": "semantic"},
+    {"id": "warning-correctness", "measure": "required warnings present; no unsupported warning; existing item and/or source fragment target", "review": "automated-plus-semantic"},
+    {"id": "strict-schema", "measure": "successful outputs satisfying the canonical response model / valid cases executed", "review": "automated"},
+    {"id": "source-fragment-coverage", "measure": "meaningful fragments mapped to output or targeted omission warning / meaningful source fragments; fallback preserves all source content apart from explicitly represented absence assertions and headings", "review": "automated-plus-semantic"},
+    {"id": "pairwise-usefulness", "measure": "structured preferred / non-tied blinded pairs; report tie count and denominator separately", "review": "blinded-semantic"},
+    {"id": "editing-effort", "measure": "item edits, deletes, additions and section moves required in review simulation; report each separately", "review": "semantic"}
+  ],
+  "releaseGates": {
+    "successfulResponseSchemaRate": 1.0,
+    "novelOrChangedProtectedFactsMaximum": 0,
+    "meaningfulFragmentCoverageRate": 1.0,
+    "fallbackOmittedSourceFragmentsMaximum": 0,
+    "falseActiveBlockersOnNegatedResolvedCasesMaximum": 0,
+    "exactProtectedTokenPreservationRate": 1.0,
+    "unambiguousMacroSectionF1Minimum": 0.9,
+    "semanticFactPrecisionMinimum": 1.0,
+    "semanticFactRecallMinimum": 0.98,
+    "criticalOmissionsMaximum": 0,
+    "structuredUsefulnessPreferenceMinimum": 0.6
+  },
+  "claimRules": {
+    "missingProviderCredentials": "Run fallback and deterministic provider integration stubs; record live primary quality, latency, cost and usefulness as not_run or not_measured.",
+    "usefulnessFailure": "Keep the provider integration available but do not claim demonstrated improvement over fallback.",
+    "thresholdChanges": "Do not lower gates or edit the frozen benchmark after observing formatter output. A dataset correction requires a new version and hash and invalidates previous comparisons.",
+    "unrunChecks": "A missing result is not a passing result. Preserve failures and not_run findings at case and metric level."
+  }
+}

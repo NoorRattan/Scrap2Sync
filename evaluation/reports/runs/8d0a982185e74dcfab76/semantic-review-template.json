@@ -1,0 +1,1900 @@
+{
+  "datasetSha256": "7f2125f0b686678adba7eaa1d48c86304ba6f873065ba93a73e9400d393b6951",
+  "rubricSha256": "ba8f6ad18235a453b532a6e515fdb3b9aece16f2a6506c1d18a88834f33e0873",
+  "reviewPacketSha256": "8ebe7818eda06807c9efc33fb55a2488313f11efa5a057991ab4456652d65cf8",
+  "reviewer": {
+    "type": "model",
+    "name": null,
+    "modelOrRole": null,
+    "provider": null,
+    "reviewedAt": null,
+    "independent": false
+  },
+  "method": "Read source notes, annotated facts, rubric, and anonymized output. Complete scores only after actual review.",
+  "records": [
+    {
+      "caseId": "Q-001",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-002",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-003",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-004",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-005",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-006",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-007",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-008",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-009",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-010",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-011",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-012",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-013",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-014",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-015",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-016",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-017",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-018",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-019",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-020",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-021",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-022",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-024",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-025",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-026",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-027",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-028",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-029",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-030",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-031",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-032",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-033",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-034",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-035",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-036",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-037",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-038",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-039",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-040",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-041",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-042",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-043",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-044",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-045",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-046",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-048",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-049",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-050",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-051",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-052",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 3,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-053",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-054",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-055",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-056",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-057",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-058",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-059",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-060",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-061",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-062",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-063",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-064",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-065",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-066",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-067",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-068",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-069",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 12,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-03",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-04",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-05",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-06",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-07",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-08",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-09",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-10",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-11",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-12",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-070",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 1,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    },
+    {
+      "caseId": "Q-072",
+      "supportedOutputFacts": null,
+      "totalOutputFacts": null,
+      "representedSourceFacts": null,
+      "requiredSourceFacts": 2,
+      "novelOrChangedProtectedFacts": null,
+      "criticalOmissions": null,
+      "falseActiveBlockers": null,
+      "warningsCorrect": null,
+      "placement": [
+        {
+          "factId": "FACT-01",
+          "actualSections": null
+        },
+        {
+          "factId": "FACT-02",
+          "actualSections": null
+        }
+      ],
+      "editingEffort": {
+        "edits": null,
+        "deletes": null,
+        "additions": null,
+        "moves": null
+      },
+      "rationale": null
+    }
+  ]
+}

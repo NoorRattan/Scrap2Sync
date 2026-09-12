@@ -1,0 +1,106 @@
+name: Release verification
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+  DO_NOT_TRACK: '1'
+  FORMATTER_PROVIDER: disabled
+  PYTHONDONTWRITEBYTECODE: '1'
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version-file: .python-version
+      - uses: astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78 # v7
+        with:
+          version: '0.12.10'
+          enable-cache: false
+      - name: Locked backend install
+        working-directory: services/api
+        run: uv sync --frozen
+      - name: Backend checks and generated contract
+        working-directory: services/api
+        run: |
+          uv run --frozen ruff format --check app tests
+          uv run --frozen ruff check app tests
+          uv run --frozen mypy app
+          uv run --frozen pytest --cov=app --cov-report=term-missing --cov-report=xml
+          uv run --frozen python -m app.export_openapi --check
+          uv run --frozen pip-audit
+      - name: Locked frontend install
+        working-directory: apps/web
+        run: npm ci --no-audit --no-fund
+      - name: Frontend checks
+        working-directory: apps/web
+        run: |
+          npm run format:check
+          npm run lint
+          npm run typecheck
+          npm run contract:check
+          npm run test:coverage
+          npm audit --audit-level=high
+          npm run build
+          npx --no-install playwright install --with-deps chromium
+      - name: Start the disabled-provider API
+        run: |
+          cd services/api
+          uv run --frozen uvicorn app.main:app --host 127.0.0.1 --port 8000 --no-access-log --no-proxy-headers &
+      - name: Browser scenarios
+        working-directory: apps/web
+        run: npm run test:e2e
+      - name: Frozen benchmark
+        run: services/api/.venv/bin/python evaluation/evaluate.py --review evaluation/reports/primary-review.json --require-semantic-pass
+      - name: Source, workflow and dependency scans
+        run: |
+          python scripts/security_scan.py
+          python scripts/fetch_tools.py
+          .tools/actionlint/actionlint
+          .tools/gitleaks/gitleaks dir . --redact --config .gitleaks.toml
+          .tools/trivy/trivy fs --scanners vuln,misconfig --severity HIGH,CRITICAL --exit-code 1 --skip-dirs .tools,.cache,apps/web/node_modules,apps/web/.next,services/api/.venv .
+      - name: Generate SBOMs
+        run: |
+          mkdir -p docs/reports
+          cd apps/web
+          npm sbom --sbom-format cyclonedx --omit=dev > ../../docs/reports/web-sbom.json
+          cd ../../services/api
+          uv run --frozen pip-audit --format cyclonedx-json --output ../../docs/reports/api-sbom.json
+      - name: Build and inspect non-root container
+        run: |
+          docker build --tag scrap2sync-api:ci services/api
+          test "$(docker image inspect scrap2sync-api:ci --format '{{.Config.User}}')" = '10001:10001'
+          docker run --detach --name scrap2sync-ci --read-only --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 2 --publish 127.0.0.1:8001:8000 scrap2sync-api:ci
+          python scripts/container_smoke.py
+          .tools/trivy/trivy image --severity HIGH,CRITICAL --exit-code 1 scrap2sync-api:ci
+          docker rm --force scrap2sync-ci
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: release-verification
+          path: |
+            services/api/coverage.xml
+            apps/web/coverage/
+            apps/web/playwright-report/
+            evaluation/reports/
+            docs/reports/
+          retention-days: 7
