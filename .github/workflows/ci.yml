@@ -89,7 +89,16 @@ jobs:
           docker build --tag scrap2sync-web:ci --build-arg NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000 apps/web
           test "$(docker image inspect scrap2sync-web:ci --format '{{.Config.User}}')" = 'node'
           docker run --detach --name scrap2sync-web-ci --read-only --tmpfs /tmp:rw,noexec,nosuid,size=32m --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 2 --publish 127.0.0.1:3001:3000 scrap2sync-web:ci
-          curl --fail --retry 20 --retry-delay 1 http://127.0.0.1:3001/api/health
+          for attempt in {1..30}; do
+            if curl --fail --silent --show-error http://127.0.0.1:3001/api/health; then
+              break
+            fi
+            if [ "$attempt" -eq 30 ]; then
+              docker logs scrap2sync-web-ci
+              exit 1
+            fi
+            sleep 1
+          done
           .tools/trivy/trivy image --severity HIGH,CRITICAL --exit-code 1 scrap2sync-web:ci
           docker rm --force scrap2sync-web-ci
           docker build --tag scrap2sync-api:ci services/api
