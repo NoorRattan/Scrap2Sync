@@ -23,12 +23,10 @@ test("the sculptural scene renders a stable reference frame", async ({
         (element as HTMLElement).style.visibility = "hidden";
       }),
     );
-  await page
-    .locator(".sync-orb")
-    .screenshot({
-      path: test.info().outputPath("sculpture-reference.png"),
-      omitBackground: true,
-    });
+  await page.locator(".sync-orb").screenshot({
+    path: test.info().outputPath("sculpture-reference.png"),
+    omitBackground: true,
+  });
 });
 
 test("example notes generate through the real API without overwriting input", async ({

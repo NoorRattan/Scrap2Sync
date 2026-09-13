@@ -16,6 +16,7 @@ if (
 }
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   distDir:
     process.env.BUILD_OUTPUT_DIR === ".next-no-orb" ? ".next-no-orb" : ".next",
   poweredByHeader: false,

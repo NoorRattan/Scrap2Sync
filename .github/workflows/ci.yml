@@ -12,15 +12,15 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NEXT_TELEMETRY_DISABLED: '1'
-  DO_NOT_TRACK: '1'
+  NEXT_TELEMETRY_DISABLED: "1"
+  DO_NOT_TRACK: "1"
   FORMATTER_PROVIDER: disabled
-  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONDONTWRITEBYTECODE: "1"
 
 jobs:
   release:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -33,7 +33,7 @@ jobs:
           python-version-file: .python-version
       - uses: astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78 # v7
         with:
-          version: '0.12.10'
+          version: "0.12.10"
           enable-cache: false
       - name: Locked backend install
         working-directory: services/api
@@ -84,8 +84,14 @@ jobs:
           npm sbom --sbom-format cyclonedx --omit=dev > ../../docs/reports/web-sbom.json
           cd ../../services/api
           uv run --frozen pip-audit --format cyclonedx-json --output ../../docs/reports/api-sbom.json
-      - name: Build and inspect non-root container
+      - name: Build and inspect non-root containers
         run: |
+          docker build --tag scrap2sync-web:ci --build-arg NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000 apps/web
+          test "$(docker image inspect scrap2sync-web:ci --format '{{.Config.User}}')" = 'node'
+          docker run --detach --name scrap2sync-web-ci --read-only --tmpfs /tmp:rw,noexec,nosuid,size=32m --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 2 --publish 127.0.0.1:3001:3000 scrap2sync-web:ci
+          curl --fail --retry 20 --retry-delay 1 http://127.0.0.1:3001/api/health
+          .tools/trivy/trivy image --severity HIGH,CRITICAL --exit-code 1 scrap2sync-web:ci
+          docker rm --force scrap2sync-web-ci
           docker build --tag scrap2sync-api:ci services/api
           test "$(docker image inspect scrap2sync-api:ci --format '{{.Config.User}}')" = '10001:10001'
           docker run --detach --name scrap2sync-ci --read-only --cap-drop ALL --security-opt no-new-privileges --memory 512m --cpus 2 --publish 127.0.0.1:8001:8000 scrap2sync-api:ci

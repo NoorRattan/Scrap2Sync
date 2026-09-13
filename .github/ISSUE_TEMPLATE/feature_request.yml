@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a focused improvement to Scrap2Sync
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the user problem before proposing an implementation. Large visual,
+        architectural, privacy, provider, persistence, or integration changes need
+        discussion before code is submitted.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who is affected, and what cannot they accomplish today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe observable behavior, not only a technical solution.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and risks
+      description: Note privacy, accessibility, security, performance, or compatibility concerns.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include workarounds or smaller approaches you considered.

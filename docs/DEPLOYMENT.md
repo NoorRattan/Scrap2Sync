@@ -1,8 +1,10 @@
 # Deployment and rollback
 
 This repository is prepared for two deployment units: a dynamic Next.js server
-and one CPU-only FastAPI instance. No host, account, paid service or public
-deployment was created. Live provider and deployed performance are unverified.
+and one CPU-only FastAPI instance. Both have production containers, non-root
+runtime users, internal health checks, locked dependencies, and CI build gates.
+No host, account, paid service or public deployment was created. Live provider
+and deployed performance are unverified.
 
 ## Local reference
 
@@ -33,6 +35,28 @@ Follow README for install, run and verification commands.
    flags only after completing the underlying checks. Do not deploy with an
    unresolved applicable critical/high supply-chain finding.
 
+## Deployment sequence
+
+1. Deploy the API from `services/api/Dockerfile`. Set `ENVIRONMENT=production`,
+   `FORMATTER_PROVIDER=disabled`, the exact HTTPS `ALLOWED_ORIGINS`, and an
+   explicitly reviewed `TRUSTED_PROXY_COUNT`. Leave every verification flag false
+   until its named check is complete.
+2. Verify API liveness and readiness through the public HTTPS route. Confirm an
+   untrusted origin is rejected and request bodies do not appear in platform logs.
+3. Deploy the frontend from `apps/web/Dockerfile`, passing the exact public API
+   origin as the `NEXT_PUBLIC_API_BASE_URL` build argument. That value is baked
+   into the browser bundle and must not contain credentials or a path.
+4. Route HTTPS traffic to frontend port 3000 and API port 8000. Do not rewrite the
+   frontend into a static site; dynamic requests create the CSP nonce.
+5. Exercise `/api/health`, the no-key generation flow, editing, section movement,
+   copy fallback, keyboard navigation, mobile reflow, reduced motion, and the
+   opt-in 3D scene from the deployed origin before enabling public traffic.
+
+A platform-native Next.js deployment may use `apps/web` as its project root and
+the same public build-time variable. A container host should build each Dockerfile
+with its service directory as context. Keep preview and production origins
+separate and list each exact frontend origin in the corresponding API environment.
+
 ## Security policy and health
 
 The selected browser policy uses a new cryptographic nonce per dynamic request.
@@ -49,16 +73,18 @@ draft uses 503. Never cache generation responses or log their bodies.
 
 ## Container verification
 
-From the repository root, build `services/api/Dockerfile` with its service folder
-as context. Both Python and build-tool images are digest-pinned. Inspect the final
-image user, health check and SBOM, scan for vulnerabilities, then start it with
-read-only filesystem, dropped capabilities, no-new-privileges and bounded CPU/RAM.
-Exercise liveness, readiness and no-key generation against that container.
+From the repository root, build each Dockerfile with its service folder as
+context. The API's Python and build-tool images are digest-pinned; the frontend
+uses an exact Node patch and Alpine release. Inspect each final image user and
+health check, generate SBOMs, and scan for vulnerabilities. Start with read-only
+filesystems, a small writable `/tmp`, dropped capabilities, no-new-privileges and
+bounded CPU/RAM. Exercise web health plus API liveness, readiness, and no-key
+generation against those containers.
 
 This Windows build host lacks Docker/Podman and a working WSL distribution.
-The supplied CI performs the Linux container build and checks; a local static
-Dockerfile review is not a container runtime pass. No CI execution is claimed
-until the owner pushes and observes its results.
+The supplied CI performs both Linux container builds, non-root/read-only runtime
+smoke checks, and image scans. A local static Dockerfile review is not a container
+runtime pass; observe the hosted CI result before promoting a revision.
 
 ## Disable, release and rollback
 

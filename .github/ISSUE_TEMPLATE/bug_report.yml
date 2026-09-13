@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible problem in Scrap2Sync
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not paste private notes, credentials,
+        provider responses, or vulnerability details here. Use the Security tab
+        for vulnerabilities.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the result and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest safe example that reproduces the problem.
+      placeholder: |
+        1. Open ...
+        2. Enter synthetic text ...
+        3. Select ...
+        4. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Version or commit
+      description: Paste the deployed version or commit SHA if known.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected area
+      options:
+        - Web interface
+        - API
+        - Deployment
+        - Documentation
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include browser, operating system, and deployment type. Remove sensitive values.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe supporting evidence
+      description: Add sanitized screenshots or logs. Do not include note contents or secrets.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I removed private data, secrets, and vulnerability details from this report.
+          required: true

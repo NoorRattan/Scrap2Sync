@@ -1,5 +1,7 @@
 # Scrap2Sync
 
+[![Release verification](https://github.com/NoorRattan/Scrap2Sync/actions/workflows/ci.yml/badge.svg)](https://github.com/NoorRattan/Scrap2Sync/actions/workflows/ci.yml)
+
 Turn rough developer notes into an editable standup draft. Organize Yesterday,
 Today and Blockers, review the wording, move or edit items, then copy plain text
 in your chosen format. English-dominant notes are the evaluated scope.
@@ -96,8 +98,24 @@ automatic checks, semantic reviewer scores and unrun live-model quality.
 `scripts/fetch_tools.py` provisions checksum-pinned source/workflow scanners.
 CI includes explicit browser scenarios, dependency/secret/workflow checks, SBOMs
 and non-root Linux container verification. Local evidence and unrun checks are
-recorded in [build record](docs/BUILD_RECORD.md) and generated reports. Nothing is
-committed or deployed automatically.
+recorded in [build record](docs/BUILD_RECORD.md) and generated reports.
+
+## Deploy
+
+The frontend can run as a dynamic Next.js service or from its production
+container. Build its image with the real public API origin baked into the client:
+
+```sh
+docker build --build-arg NEXT_PUBLIC_API_BASE_URL=https://api.example.com -t scrap2sync-web apps/web
+docker build -t scrap2sync-api services/api
+```
+
+The web and API images run as non-root users and expose health checks at
+`/api/health`, `/api/v1/health/live`, and `/api/v1/health/ready`. The frontend
+must remain dynamically rendered because its CSP uses a per-request nonce.
+Follow the [deployment guide](docs/DEPLOYMENT.md) for production variables,
+origin policy, verification, and rollback. A public host is not created by this
+repository.
 
 ## Contracts, privacy and operations
 
@@ -105,6 +123,8 @@ committed or deployed automatically.
 - [Privacy and external processing](docs/PRIVACY.md).
 - [Deployment, enablement gates and rollback](docs/DEPLOYMENT.md).
 - [Content and interaction guide](docs/CONTENT_GUIDE.md).
+- [Contributing](CONTRIBUTING.md), [community conduct](CODE_OF_CONDUCT.md), and
+  [security reporting](SECURITY.md).
 
 Notes accept up to 10,000 Unicode code points without truncation. The approved
 item-capacity correction allows a single item to preserve that entire input;
@@ -112,3 +132,9 @@ total draft text remains bounded at 20,000 code points. Style item counts are
 preferences, so preserving facts takes precedence. Outputs remain drafts and
 require review. Local benchmark or timing evidence does not establish independent
 validation, live-provider quality, universal accessibility or deployed speed.
+
+## License
+
+No open-source license has been granted. Public availability of this repository
+does not by itself grant permission to copy, modify, or redistribute the work.
+The repository owner should add an explicit license before accepting reuse.

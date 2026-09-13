@@ -12,26 +12,30 @@ Versions resolved on 2026-09-05 using official compatibility documentation and
 maintainer-published package registry metadata. Direct dependencies use exact
 versions; package-lock.json and uv.lock resolve transitive dependencies.
 
-| Component | Selected version | Compatibility/source |
-| --- | --- | --- |
-| Node.js / npm | 24.20.0 / 11.19.0 | [Official release index](https://nodejs.org/dist/index.json), [LTS policy](https://nodejs.org/en/about/previous-releases) |
-| Next.js | 16.3.4 | [Installation and Node minimum](https://nextjs.org/docs/app/getting-started/installation) |
-| React / React DOM | 19.2.8 | [Published package](https://registry.npmjs.org/react/19.2.8) |
-| React Three Fiber / Three.js | 9.7.0 / 0.185.1 | [React 19 compatibility](https://r3f.docs.pmnd.rs/tutorials/v9-migration-guide) |
-| TypeScript | 5.9.3 | [Official release documentation](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html); openapi-typescript requires 5.x |
-| Tailwind CSS / PostCSS integration | 4.3.3 | [Next.js integration](https://tailwindcss.com/docs/installation/framework-guides/nextjs) |
-| PostCSS | 8.5.28 | [Maintainer release metadata](https://registry.npmjs.org/postcss/8.5.28) |
-| Radix Dialog | 1.1.23 | [Maintainer release metadata](https://registry.npmjs.org/@radix-ui/react-dialog/1.1.23) |
-| ESLint / Next configuration | 9.39.5 / 16.3.4 | [React plugin peer compatibility](https://registry.npmjs.org/eslint-plugin-react); ESLint 10 is outside its peer range |
-| Prettier | 3.9.6 | [Maintainer release metadata](https://registry.npmjs.org/prettier/3.9.6) |
-| Vitest / coverage-v8 | 5.0.0 | [Maintainer release metadata](https://registry.npmjs.org/vitest/5.0.0) |
-| Testing Library React / DOM / user-event / jest-dom | 16.3.3 / 10.4.1 / 14.6.7 / 7.0.1 | [Official project](https://testing-library.com/docs/react-testing-library/intro/) |
-| jsdom | 30.0.1 | [Maintainer release metadata](https://registry.npmjs.org/jsdom/30.0.1) |
-| Playwright / axe integration | 1.63.0 / 4.13.0 | [Playwright tests](https://playwright.dev/docs/intro), [accessibility tests](https://playwright.dev/docs/accessibility-testing) |
-| openapi-typescript | 7.13.0 | [Maintainer release metadata](https://registry.npmjs.org/openapi-typescript/7.13.0) |
-| Python | 3.14.7 | [Official Python release](https://www.python.org/downloads/release/python-3147/) |
-| FastAPI / Pydantic | 0.141.1 / 2.13.5 | [FastAPI release notes](https://fastapi.tiangolo.com/release-notes/), [Pydantic metadata](https://pypi.org/pypi/pydantic/2.13.5/json) |
-| httpx / Uvicorn / uv | 0.28.1 / 0.52.4 / 0.12.10 | [HTTPX](https://www.python-httpx.org/), [uv locked sync](https://docs.astral.sh/uv/concepts/projects/sync/) |
+| Component                                           | Selected version                 | Compatibility/source                                                                                                                              |
+| --------------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Node.js / npm                                       | 24.20.0 / 11.19.0                | [Official release index](https://nodejs.org/dist/index.json), [LTS policy](https://nodejs.org/en/about/previous-releases)                         |
+| Next.js                                             | 16.3.4                           | [Installation and Node minimum](https://nextjs.org/docs/app/getting-started/installation)                                                         |
+| React / React DOM                                   | 19.2.8                           | [Published package](https://registry.npmjs.org/react/19.2.8)                                                                                      |
+| React Three Fiber / Three.js                        | 9.7.0 / 0.185.1                  | [React 19 compatibility](https://r3f.docs.pmnd.rs/tutorials/v9-migration-guide)                                                                   |
+| Drei / React Three postprocessing                   | 10.7.8 / 3.1.1                   | Runtime helpers, environment lighting, and GPU postprocessing for the opt-in 3D scene                                                             |
+| Framer Motion / GSAP / Lenis                        | 13.2.0 / 3.15.0 / 1.3.26         | Interface motion, sequenced reveals, and accessible smooth scrolling                                                                              |
+| Lucide React                                        | 1.45.0                           | Tree-shaken interface icon components                                                                                                             |
+| Manrope Variable / Instrument Serif                 | 5.3.0 / 5.3.0                    | Self-hosted font packages; no third-party font request at runtime                                                                                 |
+| TypeScript                                          | 5.9.3                            | [Official release documentation](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html); openapi-typescript requires 5.x |
+| Tailwind CSS / PostCSS integration                  | 4.3.3                            | [Next.js integration](https://tailwindcss.com/docs/installation/framework-guides/nextjs)                                                          |
+| PostCSS                                             | 8.5.28                           | [Maintainer release metadata](https://registry.npmjs.org/postcss/8.5.28)                                                                          |
+| Radix Dialog                                        | 1.1.23                           | [Maintainer release metadata](https://registry.npmjs.org/@radix-ui/react-dialog/1.1.23)                                                           |
+| ESLint / Next configuration                         | 9.39.5 / 16.3.4                  | [React plugin peer compatibility](https://registry.npmjs.org/eslint-plugin-react); ESLint 10 is outside its peer range                            |
+| Prettier                                            | 3.9.6                            | [Maintainer release metadata](https://registry.npmjs.org/prettier/3.9.6)                                                                          |
+| Vitest / coverage-v8                                | 5.0.0                            | [Maintainer release metadata](https://registry.npmjs.org/vitest/5.0.0)                                                                            |
+| Testing Library React / DOM / user-event / jest-dom | 16.3.3 / 10.4.1 / 14.6.7 / 7.0.1 | [Official project](https://testing-library.com/docs/react-testing-library/intro/)                                                                 |
+| jsdom                                               | 30.0.1                           | [Maintainer release metadata](https://registry.npmjs.org/jsdom/30.0.1)                                                                            |
+| Playwright / axe integration                        | 1.63.0 / 4.13.0                  | [Playwright tests](https://playwright.dev/docs/intro), [accessibility tests](https://playwright.dev/docs/accessibility-testing)                   |
+| openapi-typescript                                  | 7.13.0                           | [Maintainer release metadata](https://registry.npmjs.org/openapi-typescript/7.13.0)                                                               |
+| Python                                              | 3.14.7                           | [Official Python release](https://www.python.org/downloads/release/python-3147/)                                                                  |
+| FastAPI / Pydantic                                  | 0.141.1 / 2.13.5                 | [FastAPI release notes](https://fastapi.tiangolo.com/release-notes/), [Pydantic metadata](https://pypi.org/pypi/pydantic/2.13.5/json)             |
+| httpx / Uvicorn / uv                                | 0.28.1 / 0.52.4 / 0.12.10        | [HTTPX](https://www.python-httpx.org/), [uv locked sync](https://docs.astral.sh/uv/concepts/projects/sync/)                                       |
 
 All remaining development and typing package versions are recorded in the locks.
 Python 3.14 support is documented in FastAPI's release notes. The selected React

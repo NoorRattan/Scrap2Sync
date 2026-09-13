@@ -25,9 +25,10 @@ semantic correctness remain subjects of implementation verification.
 
 ## Evidence discipline
 
-Checkpoint evidence is recorded as checks finish. No commit, paid provider call,
-account creation, secret insertion, or public deployment is authorized by this
-build. Dependencies, test tools, and caches are confined to this repository.
+Checkpoint evidence is recorded as checks finish. No paid provider call, account
+creation, secret insertion, repository visibility change, or public deployment
+is claimed by this record. Dependencies, test tools, and caches are confined to
+this repository.
 The frozen benchmark must precede formatter implementation. Same-model dataset
 authorship and semantic review are disclosed and cannot establish independence.
 
@@ -86,3 +87,24 @@ Deferred verification:
 - Live-provider calls, provider account/region/retention verification, public
   deployment, and deployed latency remain intentionally unrun and are not part
   of the no-credential local release acceptance boundary.
+
+## Frontend and public-release hardening — 2026-09-14
+
+The existing editorial layout, responsive behavior, and motion language were
+preserved. Release work was limited to production packaging, health checks,
+verification coverage, and public-contribution documentation.
+
+- The production frontend build, formatting, lint, strict typing, contract check,
+  and dependency audit passed on the pinned toolchain.
+- **14/14 Vitest tests passed** locally. **16/16 Playwright scenarios passed**,
+  including the real no-key API flow, axe, keyboard access, strict CSP, 320-pixel
+  reflow, five responsive viewports, no-WebGL fallback, and opt-in interactive 3D.
+- The final optimized desktop Lighthouse run scored **99 performance**, **100
+  accessibility**, **100 best practices**, and **100 SEO**. Local synthetic audit
+  scores are evidence for this build, not guarantees for a future public host.
+- The web service now emits a standalone Next.js artifact and has a non-root
+  multi-stage container plus an uncached `/api/health` endpoint. CI builds and
+  smoke-tests both service images with read-only filesystems before image scans.
+- Contribution, vulnerability-reporting, pull-request, and sanitized bug-report
+  guidance are included. No open-source license or public visibility change was
+  selected on the owner's behalf.
