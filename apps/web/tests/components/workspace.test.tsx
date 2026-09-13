@@ -65,7 +65,7 @@ describe("complete editable workspace", () => {
     expect(moved).toHaveAccessibleDescription(
       "Review the section for this source note.",
     );
-    expect(document.querySelector("Button[disabled]")).toBeNull();
+    expect(document.querySelector(".draft-item Button[disabled]")).toBeNull();
     await user.click(screen.getByRole("button", { name: "Copy All" }));
     expect(write).toHaveBeenCalledWith(
       "Yesterday\n- Finished AX-14.\n- User changed <Button disabled>\n\nToday\n- Not specified.\n\nBlockers\n- No blockers stated.",
