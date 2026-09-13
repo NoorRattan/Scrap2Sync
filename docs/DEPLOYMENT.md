@@ -75,8 +75,9 @@ draft uses 503. Never cache generation responses or log their bodies.
 
 From the repository root, build each Dockerfile with its service folder as
 context. The API's Python and build-tool images are digest-pinned; the frontend
-uses an exact Node patch and Alpine release. Inspect each final image user and
-health check, generate SBOMs, and scan for vulnerabilities. Start with read-only
+uses an exact Node patch and Alpine release, applies current Alpine security
+updates, and removes build-only npm tooling from its runtime. Inspect each final
+image user and health check, generate SBOMs, and scan for vulnerabilities. Start with read-only
 filesystems, a small writable `/tmp`, dropped capabilities, no-new-privileges and
 bounded CPU/RAM. Exercise web health plus API liveness, readiness, and no-key
 generation against those containers.
