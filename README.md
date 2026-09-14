@@ -2,6 +2,8 @@
 
 [![Release verification](https://github.com/NoorRattan/Scrap2Sync/actions/workflows/ci.yml/badge.svg)](https://github.com/NoorRattan/Scrap2Sync/actions/workflows/ci.yml)
 
+**Less noise. More signal.**
+
 Turn rough developer notes into an editable standup draft. Organize Yesterday,
 Today and Blockers, review the wording, move or edit items, then copy plain text
 in your chosen format. English-dominant notes are the evaluated scope.
@@ -9,6 +11,34 @@ in your chosen format. English-dominant notes are the evaluated scope.
 The local reference runs without credentials through `rules-fallback-v1`.
 The optional OpenAI adapter is disabled by default. There are no accounts,
 databases, saved notes, analytics, voice or automatic posting integrations.
+
+**[Try the live demo](https://scrap2sync-web.onrender.com/)** ·
+[Setup](#install) · [Deployment](#deploy) · [Contributing](CONTRIBUTING.md)
+
+## What you can do
+
+- Paste rough notes and organize them into Yesterday, Today, and Blockers.
+- Choose concise bullets, a standard update, async detail, or a custom style.
+- Review and edit the draft, move items between sections, and copy individual
+  sections or the complete update as plain text.
+- Use the app without signing up or supplying an API key. The default engine
+  uses conservative rules; the optional OpenAI integration is off by default.
+- Explore the animated green sculpture and optional interactive 3D view, with
+  reduced-motion controls for a calmer experience.
+
+Notes are not saved by the app and clear when you reload or leave. Keep a copy
+of anything you need, and review every draft before sharing it. See the
+[privacy guide](docs/PRIVACY.md) for processing details.
+
+## Project structure
+
+- `apps/web` — Next.js, React, and TypeScript frontend; Three.js / React Three
+  Fiber power the optional 3D experience.
+- `services/api` — FastAPI backend, validation, rules-based generation, and the
+  optional provider adapter.
+- `evaluation` — frozen evaluation examples, rubric, and evaluator.
+- `docs` — architecture, API contract, privacy, and deployment guidance.
+- `scripts` — local startup and verification helpers.
 
 ## Install
 
@@ -102,6 +132,18 @@ recorded in [build record](docs/BUILD_RECORD.md) and generated reports.
 
 ## Deploy
 
+The public preview is hosted on Render:
+
+- **Website:** [scrap2sync-web.onrender.com](https://scrap2sync-web.onrender.com/)
+- **API readiness:** [scrap2sync-api.onrender.com/api/v1/health/ready](https://scrap2sync-api.onrender.com/api/v1/health/ready)
+
+The free services can sleep when idle, so the first visit or generation request
+may take longer while they wake up. This is a no-key preview with the OpenAI
+adapter disabled, not a hardened production deployment. Its API currently uses
+the development environment profile; follow the production guidance below
+before using it for a production workload. Avoid submitting sensitive notes to
+the public demo.
+
 The frontend can run as a dynamic Next.js service or from its production
 container. Build its image with the real public API origin baked into the client:
 
@@ -114,8 +156,7 @@ The web and API images run as non-root users and expose health checks at
 `/api/health`, `/api/v1/health/live`, and `/api/v1/health/ready`. The frontend
 must remain dynamically rendered because its CSP uses a per-request nonce.
 Follow the [deployment guide](docs/DEPLOYMENT.md) for production variables,
-origin policy, verification, and rollback. A public host is not created by this
-repository.
+origin policy, verification, and rollback.
 
 ## Contracts, privacy and operations
 
