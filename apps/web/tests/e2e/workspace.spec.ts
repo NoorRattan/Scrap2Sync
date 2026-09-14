@@ -281,6 +281,7 @@ test("keyboard, axe, strict CSP, and 320px reflow", async ({ page }) => {
   await expect(
     page.getByRole("textbox", { name: "Yesterday item 1" }),
   ).toBeVisible();
+  await expect(page.locator(".draft-section").last()).toHaveCSS("opacity", "1");
   const axe = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
     .analyze();
