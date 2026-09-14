@@ -322,6 +322,21 @@ svg {
   inset: 0;
   background: url("/sculpture.png") center / contain no-repeat;
   transition: opacity 0.6s;
+  animation: sculpture-float 12s ease-in-out infinite;
+  animation-play-state: paused;
+  transform-origin: 50% 50%;
+}
+.sync-orb[data-animate="true"] .sculpture-fallback {
+  animation-play-state: running;
+}
+@keyframes sculpture-float {
+  0%,
+  100% {
+    transform: translateY(6px) rotate(-2deg) scale(0.98);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg) scale(1.02);
+  }
 }
 .scene-toggle {
   position: absolute;
@@ -352,6 +367,7 @@ svg {
 }
 .sync-orb:has(canvas) .sculpture-fallback {
   opacity: 0;
+  animation-play-state: paused;
 }
 .sculpture-fallback i {
   position: absolute;

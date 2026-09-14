@@ -71,7 +71,12 @@ export function SyncOrbSlot({ reducedMotion }: { reducedMotion: boolean }) {
 
   return (
     <>
-      <div ref={host} className="sync-orb" aria-hidden="true">
+      <div
+        ref={host}
+        className="sync-orb"
+        data-animate={visible && !reducedMotion && !systemReduced}
+        aria-hidden="true"
+      >
         <div className="sculpture-fallback" />
         {visible && interactive && !unavailable && (
           <SceneBoundary
